@@ -1,5 +1,5 @@
 ---
-title: "python 날짜와 시간"
+title: "python date and time"
 date: 2019-02-02 14:20:30
 categories: python
 ---
