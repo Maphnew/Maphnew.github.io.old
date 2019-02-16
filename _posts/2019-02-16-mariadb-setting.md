@@ -4,7 +4,7 @@ date: 2019-02-16 09:01:30
 categories: database
 ---
 
-###성능향상을 위한 Setting
+### 성능향상을 위한 Setting
 + MSSQL과는 달리 MariaDB는 오픈소스라 스스로 최적화를 시키지 못해 개발자가 설정을 해줘야한다. 회사에서 쓰던 MSSQL을 대신해 MariaDB를 테스트하면서
 그 설정에 대한 내용을 적어본다.
 
