@@ -56,3 +56,77 @@ init();
 4. setInterval(func, 3000);
 5. div.js-Tile enter(vscode)
 6. mini if
+
+
+#### Saving the User Name
+1. LocalStorage
+2. display : none / block
+3. form
+
+- greetings.js
+
+```
+const form = document.querySelector(".js-form"),
+    input = form.querySelector("input"),
+    greeting = document.querySelector(".js-greetings");
+
+const USER_LS = "currentUser",
+    SHOWING_CN = "showing";
+
+function paintGreeting(text){
+    form.classList.remove(SHOWING_CN);
+    greeting.classList.add(SHOWING_CN);
+    greeting.innerText = `Hello ${text}`;
+}
+
+function loadName(){
+    const currentUser = localStorage.getItem(USER_LS);
+    if(currentUser === null){
+
+    }else{
+        paintGreeting(currentUser);
+    }
+}
+
+function init(){
+    loadName();
+}
+
+init();
+```
+
+- index.css
+
+```
+.form,
+.greetings{
+    display: none;
+}
+
+.showing{
+    display: block;
+}
+```
+
+- index.html
+
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Something</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+        <form class="js-form form">
+            <input type="text" placeholder="What is your name?" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+        <script src="clock.js"></script>
+        <script src="greeting.js"></script>
+    </body>
+</html>
+```
