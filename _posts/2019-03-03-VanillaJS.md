@@ -162,6 +162,8 @@ init();
 3. toDoList.appendChild(li); // toDoList: ul class="js-toDoList"
 4. JavaScript Object Notation - JSON.stringify(json);
 5. forEach(fucntion(each){ function(each.text); });
+6. filter(function(each){ return each.id !== parseInt(li.id); });
+7. toDoList.removeChild(event.target.parentNode);
 
 
 - todo.js
