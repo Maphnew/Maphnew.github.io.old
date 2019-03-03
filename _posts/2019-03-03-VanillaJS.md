@@ -5,7 +5,7 @@ categories: javascript
 ---
 
 ### VanillaJS
-#### Making a JS Clock part One
+#### Making a JS Clock
 From : https://academy.nomadcoders.co
 
 - index.html
@@ -35,11 +35,15 @@ function getTime(){
     const minutes = date.getMinutes();
     const hours = date.getHours();
     const seconds = date.getSeconds();
-    clockTitle.innerText = `${hours}:${minutes}:${seconds}`
+    clockTitle.innerText = `${
+        hours < 10 ? `0${hours}` : hours}:${
+        minutes < 10 ? `0${minutes}` : minutes}:${
+        seconds < 10 ? `0${seconds}` : seconds}`;
 }
 
 function init() {
     getTime();
+    setInterval(getTime, 1000);
 }
 
 init();
@@ -48,3 +52,7 @@ init();
 1. Backtick and Interpolation
 2. querySelector();
 3. innerText
+
+4. setInterval(func, 3000);
+5. div.js-Tile enter(vscode)
+6. mini if
