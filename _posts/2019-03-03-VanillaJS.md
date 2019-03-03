@@ -9,7 +9,7 @@ categories: javascript
 From : https://academy.nomadcoders.co
 
 - index.html
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,9 +24,10 @@ From : https://academy.nomadcoders.co
     </body>
 </html>
 ```
+
 - clock.js
 
-```
+```javascript
 const clockContainer = document.querySelector(".js-clock"),
     clockTitle = clockContainer.querySelector("h1");
 
@@ -65,7 +66,7 @@ init();
 
 - greetings.js
 
-```
+```javascript
 const form = document.querySelector(".js-form"),
     input = form.querySelector("input"),
     greeting = document.querySelector(".js-greetings");
@@ -97,7 +98,7 @@ init();
 
 - index.css
 
-```
+```css
 .form,
 .greetings{
     display: none;
@@ -110,7 +111,7 @@ init();
 
 - index.html
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
