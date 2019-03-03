@@ -153,3 +153,82 @@ init();
     </body>
 </html>
 ```
+
+
+#### Making a To Do List part One
+
+1. document.createElement("li"); or "button"
+2. addEventListener("submit", fucn)
+3. toDoList.appendChild(li); // toDoList: ul class="js-toDoList"
+
+- todo.js
+
+```javascript
+const toDoForm = document.querySelector(".js-toDoForm"),
+    toDoInput = toDoForm.querySelector("input"),
+    toDoList = document.querySelector(".js-toDoList");
+
+const TODOS_LS = 'toDos';
+
+function paintToDo(text){
+    const li = document.createElement("li");
+    const delBtn = document.createElement("button");
+    delBtn.innerHTML = "x";
+    const span = document.createElement("span");
+    span.innerText = text;
+    li.appendChild(span);
+    li.appendChild(delBtn);
+    toDoList.appendChild(li);
+}
+
+function handleSubmit(event){
+    event.preventDefault();
+    const currentValue = toDoInput.value;
+    paintToDo(currentValue);
+    toDoInput.value = "";
+}
+
+function loadToDos(){
+    const toDos = localStorage.getItem(TODOS_LS);
+    if(toDos !== null){
+        // paintToDo(toDos);
+    }
+}
+
+function init(){
+    loadToDos();
+    toDoForm.addEventListener("submit", handleSubmit);
+}
+
+init();
+```
+
+- index.html
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Something</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+        <form class="js-form form">
+            <input type="text" placeholder="What is your name?" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write a to do" />
+        </form>
+        <ul class="js-toDoList">
+            
+        </ul>
+        <script src="clock.js"></script>
+        <script src="greeting.js"></script>
+        <script src="todo.js"></script>
+    </body>
+</html>
+```
