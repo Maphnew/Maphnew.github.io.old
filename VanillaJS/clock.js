@@ -10,14 +10,14 @@ function getTime(){
     clockTitle.innerText = `${
         hours < 10 ? `0${hours}` : hours}:${
         minutes < 10 ? `0${minutes}` : minutes}:${
-        seconds < 10 ? `0${seconds}` : seconds}.${
-        milliseconds < 10 ? `00${milliseconds}` : milliseconds < 100 ? `0${milliseconds}`: milliseconds
-        }`;
+        seconds < 10 ? `0${seconds}` : seconds} 
+        // .${milliseconds < 10 ? `00${milliseconds}` : milliseconds < 100 ? `0${milliseconds}`: milliseconds}
+        `;
 }
 
 function init() {
     getTime();
-    setInterval(getTime, 100);
+    setInterval(getTime, 1000);
 }
 
 init();
