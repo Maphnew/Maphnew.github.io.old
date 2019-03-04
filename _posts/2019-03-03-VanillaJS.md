@@ -363,13 +363,29 @@ init();
 #### Getting the Weather
 1. navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoError);
 2. getPostion, save in localStrage
+3. fetch( URL ).then(fucntion(response) {  })then(function(json) {  });
 
 
 - weather.js
 
 ```javascript
-const API_KEY = "";
+const weather = document.querySelector(".js-weather");
+  
+const API_KEY = "fbd234b4b8ae80c48dfa0de89e8e3749";
 const  COORDS = 'coords';
+
+function getWeather(lat, lon){
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
+    ).then(function(response){
+        return response.json();
+    })
+    .then(function(json){
+        const temperature = json.main.temp;
+        const place = json.name;
+        console.log(weather);
+        weather.innerText = `${temperature} @ ${place}`;
+    });
+}
 
 function saveCoords(coordsObj){
     localStorage.setItem(COORDS, JSON.stringify(coordsObj));
@@ -386,6 +402,7 @@ function handleGeoSuccess(position){
         // longitude: longitude
     };
     saveCoords(coordObj);
+    getWeather(latitude, longitude);
 }
 
 function handleGeoError(){
@@ -401,7 +418,8 @@ function loadCoords(){
     if(loadedCoords === null){
         askForCoords();
     }else{
-        // getWeather
+        const parsedCoords = JSON.parse(loadedCoords);
+        getWeather(parsedCoords.latitude, parsedCoords.longitude);
     }
 }
 
@@ -414,3 +432,36 @@ init();
 
 ```
 
+- index.html
+
+```javascript
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Something</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+        <form class="js-form form">
+            <input type="text" placeholder="What is your name?" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write a to do" />
+        </form>
+        <ul class="js-toDoList">
+            
+        </ul>
+        <spanc class="js-weather"></spanc>
+        <script src="clock.js"></script>
+        <script src="greeting.js"></script>
+        <script src="todo.js"></script>
+        <script src="bg.js"></script>
+        <script src="weather.js"></script>
+    </body>
+</html>
+```
