@@ -9,6 +9,7 @@ categories: javascript
 From : https://academy.nomadcoders.co
 
 - index.html
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -226,6 +227,7 @@ init();
 ```
 
 - index.html
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -253,4 +255,107 @@ init();
         <script src="todo.js"></script>
     </body>
 </html>
+```
+
+#### Image Background
+1. image.src = `1.jpg`;
+2. image.classList.add('bgimage');
+3. Math.floor() / Math.ceil() / Math.random()
+4. @keyframes fadeIn{from{ opacity:0; }to{ opacity:1; }}
+5. animation: fadeIn .5s linear;
+
+- index.html
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Something</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+        <form class="js-form form">
+            <input type="text" placeholder="What is your name?" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write a to do" />
+        </form>
+        <ul class="js-toDoList">
+            
+        </ul>
+        <script src="clock.js"></script>
+        <script src="greeting.js"></script>
+        <script src="todo.js"></script>
+        <script src="bg.js"></script>
+    </body>
+</html>
+```
+
+- index.css
+
+```css
+body{
+    background-color: #2c3e50;
+}
+
+.form,
+.greetings{
+    display: none;
+}
+
+
+.showing{
+    display: block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    animation: fadeIn .5s linear;
+}
+```
+
+- bg.js
+
+```javascript
+const body = document.querySelector("body");
+
+const IMG_NUMBER = 4;
+
+function paintImage(imgNumber){
+    const image = new Image();
+    image.src = `images/${imgNumber + 1}.jpg`;
+    image.classList.add('bgImage');
+    body.appendChild(image);
+}
+
+function genRandom(){
+    const number = Math.floor(Math.random() * IMG_NUMBER);
+    return number;
+}
+
+function init(){
+    const randomNumber = genRandom();
+    paintImage(randomNumber);
+}
+
+init();
 ```
