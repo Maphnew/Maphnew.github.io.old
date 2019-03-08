@@ -1,6 +1,7 @@
 const upDownForm = document.querySelector(".js-upDownForm"),
     upDownInput = upDownForm.querySelector("input"),
-    upDownList = document.querySelector(".js-upDownList");
+    upDownList = document.querySelector(".js-upDownList"),
+    slider = document.querySelector(".js-slider");
 
 const DATA_LS = 'data';
 
@@ -43,22 +44,18 @@ function paintList(currentValue){
 
 function handleSubmit(event) {
     event.preventDefault();
-    const currentValue = startTime.value + " ~ " + stopTime.value+ " - " + upDown.value;
+    const currentValue = startTime.value + " ~ " + stopTime.value+ " - " + upDown.value + ", "+ slider.value +"층";
     paintList(currentValue);
     startTime.value = "";
     stopTime.value = "";
     upDown.value = "";
+    slider.value ="";
 }
 
 function loadDataList(){
     const loadedList = localStorage.getItem(DATA_LS);
-    console.log(typeof(loadedList));
     if(loadedList !== null){
         const parsedList = JSON.parse(loadedList);
-        console.log(parsedList);
-        // parsedList.forEach(function(list){
-        //     paintList(list.text);
-        // });
     }
 }
 
