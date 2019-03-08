@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Something</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="index.css"/>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+    </head>
+    <body>
+        <div class="js-clock clock">
+            <h1>00:00</h1>
+        </div>
+        <!-- <form class="js-form form">
+            <input type="text" placeholder="What is your name?" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+        <form class="js-toDoForm toDoForm">
+            <input type="text" placeholder="Write a to do" />
+        </form> -->
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <input type="button" class="js-start start" value="시작" />
+            </div>
+            <div class="ui-block-b">
+                <input type="button" class="js-stop stop" value="종료" />
+            </div>
+        </div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <input type="button" class="js-up up" value="UP" />
+            </div>
+            <div class="ui-block-b">
+                <input type="button" class="js-down down" value="DOWN" />
+            </div>
+        </div>
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <input type="text" class="js-startTime startTime" placeholder="Start Time" value=""/>
+            </div>
+            <div class="ui-block-b">
+                <input type="text" class="js-stopTime stopTime" placeholder="Stop Time" />
+            </div>
+            <div class="ui-block-c">
+                <input type="text" class="js-upDown upDown" placeholder="UP or DOWN" />
+            </div>
+        </div>
+        <div class="js-slider">
+            <input type="range" class="range" min="1" max="7" value="4" />
+        </div>
+
+        <form class="js-upDownForm upDownForm">
+            <input type="button" value="Submit" />
+        </form>
+        <ul class="js-upDownList upDownList">
+            
+        </ul>
+        <script src="clock.js"></script>
+        <script src="setData.js"></script>
+        <script src="listUp.js"></script>
+    </body>
+</html>
