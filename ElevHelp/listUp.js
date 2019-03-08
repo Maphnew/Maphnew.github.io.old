@@ -1,7 +1,6 @@
 const upDownForm = document.querySelector(".js-upDownForm"),
     upDownInput = upDownForm.querySelector("input"),
-    upDownList = document.querySelector(".js-upDownList"),
-    slider = document.querySelector(".js-slider");
+    upDownList = document.querySelector(".js-upDownList");
 
 const DATA_LS = 'data';
 
@@ -44,12 +43,13 @@ function paintList(currentValue){
 
 function handleSubmit(event) {
     event.preventDefault();
-    const currentValue = startTime.value + " ~ " + stopTime.value+ " - " + upDown.value + ", "+ slider.value +"층";
+    let rangeValue = document.querySelector(".range").value;
+    const currentValue = startTime.value + " ~ " + stopTime.value+ " - " + upDown.value + ", "+ rangeValue +"층";
     paintList(currentValue);
     startTime.value = "";
     stopTime.value = "";
     upDown.value = "";
-    slider.value ="";
+    rangeValue.value ="";
 }
 
 function loadDataList(){
