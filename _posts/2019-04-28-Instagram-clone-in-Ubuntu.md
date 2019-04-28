@@ -62,3 +62,13 @@ yarn --version
 ***
 
 2. Creating GraphQL Server
+
+- Add dotenv
+```
+# yarn add dotenv
+```
+- Modify src/server.js
+```javascript
+require("dotenv").config();
+import 
+```
