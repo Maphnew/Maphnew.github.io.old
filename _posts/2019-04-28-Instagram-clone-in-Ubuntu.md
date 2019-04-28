@@ -110,3 +110,57 @@ server.start({port:PORT}, () =>
 import logger from "morgan";
 
 ```
+- Express in Graphql
+- Modify src/server.js
+```javascript
+server.express.use(logger("dev"));
+```
+- Create folders src/api
+- Add graphql-tools and merge-graphql-schemas
+```
+# yarn add graphql-tools merge-graphql-schemas
+```
+- Create schema.js and Code
+```javascript
+import path from "path";
+import { makeExecutableSchema } from "graphql-tools";
+import { fileLoader, mergeResolvers, mergeTypes } from "merge-graphql-schemas";
+
+
+const allTypes = fileLoader(path.join(__dirname, "/api/**/*.graphql"))
+const allResolvers = fileLoader(path.join(__dirname, "/api/**/*.js"))
+
+const schema = makeExecutableSchema({
+    typeDefs: mergeTypes(allTypes),
+    resolvers: mergeResolvers(allResolvers)
+});
+
+export default schema;
+```
+
+- Create folders src/api/Greetings/sayHello
+- Create files sayHello.graphql, sayHello.js and Code it
+
+- Modify src/server.js
+```javascript
+require("dotenv").config()
+import { GraphQLServer } from "graphql-yoga";
+import logger from "morgan";
+import schema from "./schema";
+
+const PORT = process.env.PORT || 4000;
+
+const server = new GraphQLServer({ schema });
+
+server.express.use(logger("dev"));
+
+server.start({port:PORT}, () => 
+    console.log(`Server running on http://localhost:${PORT}`) 
+);
+```
+
+- Create folder src/api/Greetings/sayGoodbye
+- Create files sayGoodbye.graphql, sayGoodbye.js and Code it!
+- Test localhost:4000
+
+### 2. Setting up prisma
