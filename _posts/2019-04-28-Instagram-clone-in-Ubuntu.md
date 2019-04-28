@@ -23,16 +23,16 @@ sudo apt install yarn
 
 yarn --version
 ```
-- Initialization yarn
+- Initialization __yarn__
 ```
 # yarn init
 ```
 - Set up project name, version, description etc.
-- Add graphql-yoga
+- Add __graphql-yoga__
 ```
-yarn add graphql-yoga
+# yarn add graphql-yoga
 ```
-- Start __vscode
+- Start __vscode__
 ```
 # code .
 ```
