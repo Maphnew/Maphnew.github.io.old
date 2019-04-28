@@ -102,9 +102,9 @@ server.start({port:PORT}, () =>
 
 #### 1.2 Setting up the server like the Pros
 
-- Add a middleware "morgan" (for logging)
+- Add a middleware "morgan" (for logging) / server.js
 
-```javascript server.js
+```javascript 
 
 
 import logger from "morgan";
