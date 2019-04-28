@@ -32,11 +32,11 @@ yarn --version
 ```
 yarn add graphql-yoga
 ```
-- Start vscode
+- Start __vscode
 ```
 # code .
 ```
-- Add nodemon
+- Add __nodemon__
 ```
 # yarn add nodemon -D
 ```
@@ -58,5 +58,7 @@ yarn add graphql-yoga
 ```
 # yarn dev
 ```
-=================================
+
+***
+
 2. Creating GraphQL Server
