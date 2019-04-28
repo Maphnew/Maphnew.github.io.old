@@ -7,7 +7,7 @@ categories: web
 1. Settings in Ubuntu
 - Installing yarn
 
-Ref: https://itsfoss.com/install-yarn-ubuntu/
+Ref: <https://itsfoss.com/install-yarn-ubuntu/>
 
 ```
 sudo apt install curl
