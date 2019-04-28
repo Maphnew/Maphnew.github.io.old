@@ -3,8 +3,8 @@ title: "Just clone it!"
 date: 2019-04-28 11:37:00
 categories: web
 ---
-### Set Up
-1. Setting up the Project
+### 1. Set Up
+#### 1.0 Setting up the Project
 - Make github repository(Add readme.md / .gitignore got Node)
 - Clone it!
 - Installing yarn
@@ -61,7 +61,7 @@ yarn --version
 
 ***
 
-2. Creating GraphQL Server
+#### 1.1 Creating GraphQL Server
 
 - Add dotenv
 ```
@@ -98,4 +98,15 @@ server.start({port:PORT}, () =>
 {
     "presets": ["@babel/preset-env"]
 }
+```
+
+#### 1.2 Setting up the server like the Pros
+
+- Add a middleware "morgan" (for logging)
+
+```javascript server.js
+
+
+import logger from "morgan";
+
 ```
