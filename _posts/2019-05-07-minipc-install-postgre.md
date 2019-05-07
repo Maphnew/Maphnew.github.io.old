@@ -1,6 +1,6 @@
-###postgre 설치
+### postgre 설치
 
-####출처: https://orashelter.tistory.com/56 [둥지]
+#### 출처: https://orashelter.tistory.com/56 [둥지]
 
 1. 설치 가능한 postgresql의 버전을 확인합니다.
 ```
@@ -174,13 +174,27 @@ passwd: 모든 인증 토큰이 성공적으로 업데이트 되었습니다.
 9. postgresql 접속 및 설치된 버전 확인 합니다.
 ```
 # su - postgres
-
+```
+```
+-bash-4.2$
+```
+```
 # psql
+```
+```
+psql (11.2)
+도움말을 보려면 "help"를 입력하십시오.
 
+postgres=#
+```
+```
 # select version();
 ```
 ```
-bash-4.2$ psql
-psql (11.2)
-도움말을 보려면 "help"를 입력하십시오.
+                                                 version
+---------------------------------------------------------------------------------------------------------
+ PostgreSQL 11.2 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-36), 64-bit
+(1개 행)
 ```
+
+
