@@ -121,6 +121,8 @@ https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/repodata/r
 - /etc/sysconfig/network-scripts/ifcfg-enp3s0 의 network 정보 수정(staic ip, DNS, NETMASK ..) 
 ```
 # yum update
+
+# yum install -y postgresql11-server postgresql11
 ```
 
 
