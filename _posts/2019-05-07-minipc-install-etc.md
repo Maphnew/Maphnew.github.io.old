@@ -108,7 +108,7 @@ python3 manage.py migrate
 ```
 - django run
 ```
-# python3 manage.py runserver
+# python3 manage.py runserver 0:8000
 ```
 
 9. scada 시작
