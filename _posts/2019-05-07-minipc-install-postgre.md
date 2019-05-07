@@ -1,4 +1,5 @@
 ###postgre 설치
+
 ####출처: https://orashelter.tistory.com/56 [둥지]
 
 1. 설치 가능한 postgresql의 버전을 확인합니다.
@@ -137,33 +138,49 @@ postgresql11-11.2-2PGDG.rhel7.x86_64
 ```
 cat /etc/passwd | grep postgres
 ```
-
+```
+postgres:x:26:26:PostgreSQL Server:/var/lib/pgsql:/bin/bash
+```
 
 6. postgresql 초기화 합니다.
 ```
 /usr/pgsql-11/bin/postgresql-11-setup initdb
 ```
-
+```
+Initializing database ...
+OK
+```
 
 7. 서비스 활성화 및 재시작 합니다.
 ```
-systemctl enable postgresql-11
+# systemctl enable postgresql-11
 
-systemctl start postgresql-11
+# systemctl start postgresql-11
 ```
 
 
 8. postgresql 패스워드를 변경합니다.
 ```
-sudo passwd postgres
+# sudo passwd postgres
 ```
-
+```
+postgres 사용자의 비밀 번호 변경 중
+새  암호:
+잘못된 암호: 암호는 8 개의 문자 보다 짧습니다
+새  암호 재입력:
+passwd: 모든 인증 토큰이 성공적으로 업데이트 되었습니다.
+```
 
 9. postgresql 접속 및 설치된 버전 확인 합니다.
 ```
-su - postgres
+# su - postgres
 
-psql
+# psql
 
-select version();
+# select version();
+```
+```
+bash-4.2$ psql
+psql (11.2)
+도움말을 보려면 "help"를 입력하십시오.
 ```
