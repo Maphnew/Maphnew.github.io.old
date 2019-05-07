@@ -111,19 +111,23 @@ python3 manage.py migrate
 # python3 manage.py runserver 0:8000
 ```
 
-9. scada 시작
+- smart eocr(uyeg-ze) 등록
+
+9. redis server / scada 시작
 ```
-# producer 시작 
-python3 manage.py producer start
+# redis-server
 
-# consumer 시작 
-python3 manage.py consumer start
+- producer 시작 
+# python3 manage.py producer start
 
-# producer 종료 
-python3 manage.py producer stop
+- consumer 시작 
+# python3 manage.py consumer start
 
-# consumer 종료 
-python3 manage.py consumer stop
+- producer 종료 
+# python3 manage.py producer stop
+
+- consumer 종료 
+# python3 manage.py consumer stop
 ```
 10. 서비스 등록
 ```
