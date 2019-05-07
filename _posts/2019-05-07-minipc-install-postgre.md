@@ -510,33 +510,28 @@ Is this okay? [(y)es/(s)kip/(q)uit]:
 ```
 
 15. 외부에서도 접속 가능하게 셋팅합니다. ( postgresql.conf 수정 )
-
+```
 #listen_addresses = 'localhost'  ->  listen_addresses = '*'
-
-
+```
 
 16. 마찬가지로 외부에서 접속 가능하도록 셋팅합니다. ( pg_hba.conf 수정 )
-
-find / -name pg_hba.conf로 위치를 찾아서 수정합니다.
+```
+# find / -name pg_hba.conf로 위치를 찾아서 수정합니다.
 
 host all all 0.0.0.0/0 trust
-
+```
 
 
 16. postgresql을 재시작합니다.
-
+```
 systemctl restart postgresql-11
-
-
+```
 
 17. postgresql 외부 접속.
 
 postgresql이 외부에서 접속이 가능한지를 확인하기 위해서는 pgadmin4와 같은 툴을 이용해서 접속하여 테스트 해볼 수 있습니다.
 
 만약 접속이 안될경우 방화벽을 해제 해보시길 바랍니다.
-
-
-
 
 
 
