@@ -118,49 +118,6 @@ Complete!
 Python 3.6.7
 ```
 
-- Alias 수정
-기본적으로 python 명령어는 Python 2.x를 가리키고 있기 때문에 Alias 수정으로 이를 변경해줍니다.
+- Alias 수정 금지 - yum 사용에 에러가 뜸
 
-- 먼저 Python 3.x가 설치되어 있는 디렉토리 위치를 찾습니다.
-```
- # which python3.6
- /usr/bin/python3.6
- ```
-- 그 다음 현재 Alias 확인을 합니다.
-```
-# ls -l /bin/python*
-```
-```
-lrwxrwxrwx. 1 root root     7  5월  7 13:13 /bin/python -> python2
-lrwxrwxrwx. 1 root root     9  5월  7 13:13 /bin/python2 -> python2.7
--rwxr-xr-x. 1 root root  7216  4월  9 23:31 /bin/python2.7
--rwxr-xr-x. 2 root root 11376 12월  6 06:04 /bin/python3.6
-lrwxrwxrwx. 1 root root    26  5월  7 14:37 /bin/python3.6-config -> /usr/bin/python3.6m-config
--rwxr-xr-x. 2 root root 11376 12월  6 06:04 /bin/python3.6m
--rwxr-xr-x. 1 root root   173 12월  6 06:04 /bin/python3.6m-config
--rwxr-xr-x. 1 root root  3435 12월  6 06:01 /bin/python3.6m-x86_64-config
-```
-- Alias 수정을 합니다. (수정 금지 - yum 사용에 에러가 뜸)
-```
-# unlink /bin/python
 
-# ln -s /bin/python3.6 /bin/python3
-
-# ln -s /bin/python3.6 /bin/python
-
-# ln -s /bin/pip3.6 /bin/pip
-```
-```
-# ls -l /bin/python*
-```
-```
-lrwxrwxrwx. 1 root root    14  5월  7 14:47 /bin/python -> /bin/python3.6
-lrwxrwxrwx. 1 root root     9  5월  7 13:13 /bin/python2 -> python2.7
--rwxr-xr-x. 1 root root  7216  4월  9 23:31 /bin/python2.7
-lrwxrwxrwx. 1 root root    14  5월  7 14:47 /bin/python3 -> /bin/python3.6
--rwxr-xr-x. 2 root root 11376 12월  6 06:04 /bin/python3.6
-lrwxrwxrwx. 1 root root    26  5월  7 14:37 /bin/python3.6-config -> /usr/bin/python3.6m-config
--rwxr-xr-x. 2 root root 11376 12월  6 06:04 /bin/python3.6m
--rwxr-xr-x. 1 root root   173 12월  6 06:04 /bin/python3.6m-config
--rwxr-xr-x. 1 root root  3435 12월  6 06:01 /bin/python3.6m-x86_64-config
-```
