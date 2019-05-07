@@ -434,7 +434,7 @@ success: miscellaneous settings will be updated
 Saving changes to: /var/lib/pgsql/11/data/postgresql.conf
 ```
 
-14. 만약 위의 timescaledb-tune이 아래와 같은 에러 발생시 직접 설정해야 합니다. ( 해결법을 찾지 못했음.. )
+14. 만약 위의 timescaledb-tune이 아래와 같은 에러 발생시 직접 설정해야 합니다. ( 해결법을 찾지 못했음.. ) -> 13번의 두번째 명령어로 
 ```
 exit: could not execute `pg_config --version`: exec: "pg_config": executable file not found in $PATH
 ```
