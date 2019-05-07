@@ -140,7 +140,7 @@ lrwxrwxrwx. 1 root root    26  5월  7 14:37 /bin/python3.6-config -> /usr/bin/p
 -rwxr-xr-x. 1 root root   173 12월  6 06:04 /bin/python3.6m-config
 -rwxr-xr-x. 1 root root  3435 12월  6 06:01 /bin/python3.6m-x86_64-config
 ```
-- Alias 수정을 합니다.
+- Alias 수정을 합니다. (수정 금지 - yum 사용에 에러가 뜸)
 ```
 # unlink /bin/python
 
