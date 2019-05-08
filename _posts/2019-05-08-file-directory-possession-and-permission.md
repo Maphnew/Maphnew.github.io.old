@@ -105,3 +105,32 @@ This is test for link.
 Original file.
 
 ```
+> 원본과 hardlink는 inode1(67126969), 크기가 동일
+> softlink는 inode2(67126968), 별도의 원본 파일 포인터를 갖기 때문에 8바이트로 크기가 다름, -> 원본 파일 지정
+
+> 원본 파일을 다른 곳으로 이동시켜보고 확인 해보자
+```
+[root@localhost linktest]# mv basefile ../
+[root@localhost linktest]# ls -il
+합계 4
+67126969 -rw-r--r-- 2 root root 38  5월  8 22:02 hardlink
+67126968 lrwxrwxrwx 1 root root  8  5월  8 22:02 softlink -> basefile
+[root@localhost linktest]# cat softlink
+cat: softlink: 그런 파일이나 디렉터리가 없습니다
+```
+> 하드링크는 디렉터리에서 원본 파일이 없어져도 아무런 이상이 없고, 심볼릭 링크는 디렉터리에서 원본 파일이 없어지면 연결이 끊어진다.
+
+```
+[root@localhost linktest]# mv ../basefile .
+[root@localhost linktest]# ls -il
+합계 8
+67126969 -rw-r--r-- 2 root root 38  5월  8 22:02 basefile
+67126969 -rw-r--r-- 2 root root 38  5월  8 22:02 hardlink
+67126968 lrwxrwxrwx 1 root root  8  5월  8 22:02 softlink -> basefile
+[root@localhost linktest]# cat softlink
+This is test for link.
+Original file.
+
+```
+
+> 다시 파일을 가져오면 원상태로 복구된다.
