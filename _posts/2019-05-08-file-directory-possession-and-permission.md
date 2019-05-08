@@ -35,10 +35,15 @@ drwxr-xr-x. 2 root root    6  5월  1 21:21 음악
 - 파일 허가권 permission
 
 소유자user의 파일 접근권한, 그룹group의 파일 접근 권한, 그 외 사용자other의 파일 접근 권한으로 3개씩 끊어서 인식하면 된다.
+
 r - read
+
 w - write
+
 x - execute
+
 sample.txt 파일(-rw-r--r--)의 소유자는 rw-, 그룹은 r--, 그 외 사용자는 r-- 이다.(첫 -는 파일 유형, 일반파일)
+
 
 다음과 같이 숫자로 표현할 수 있다.
 rwx : 7 (4+2+1 = 7, 2진수 111)
