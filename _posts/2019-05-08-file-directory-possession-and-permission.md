@@ -66,6 +66,15 @@ drwxr-xr-x. 2 root root    6  5월  1 21:21 음악
 >'g+rx'는 그룹에게 읽기와 실행 권한을 허가하라는 의미,
 >'o+rwx'는 그외 사용자에게 모든 권한을 허가하라는 의미가 된다.
 
-- 파일 
+- 파일 소유권 ownership
+> 파일을 소유한 사용자와 그룹을 의미한다.
+> sample.txt 파일은 root라는 이름의 사용자가 소유자이며, 그룹도 root로 되어 있다.
+> 파일의 소유권을 바꾸는 명령어로는 'chown'이 있다.
+
+> 'chown 새로운사용자이름(.새로운그룹이름) 파일이름'의 형식으로 사용한다.
+> 'chown centos sample.txt'는 소유자를 centos 사용자로 바꾸라는 의미이고
+> 'chown centos.centos sample.txt'는 파일의 그룹도 centos 그룹으로 바꾸라는 의미다.
+> 또한 'chgrp centos sample.txt'는 그룹만 centos 그룹으로 변경하라는 의미가 된다.
+
 
 
