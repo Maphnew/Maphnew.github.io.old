@@ -77,4 +77,31 @@ drwxr-xr-x. 2 root root    6  5월  1 21:21 음악
 > 또한 'chgrp centos sample.txt'는 그룹만 centos 그룹으로 변경하라는 의미가 된다.
 
 
+- 링크 link
+> 파일의 링크Link는 하드 링크Hard Link와 심볼릭 링크Symbolic Link or Soft Link 2가지가 있다.
+> inode에 대한 이해가 도움이 될 것이다.
+> test 해보자 아래와 같이 폴더를 생성하고 하드 링크, 소프트 링크를 만들어본다.
+```bash
+[root@localhost ~]# mkdir linktest
+[root@localhost ~]# cd linktest/
+[root@localhost linktest]# pwd
+/root/linktest
+[root@localhost linktest]# vi basefile
+[root@localhost linktest]# cat basefile
+This is test for link.
+Original file.
+[root@localhost linktest]# ln basefile hardlink
+[root@localhost linktest]# ln -s basefile softlink
+[root@localhost linktest]# ls -il (il 옵션은 inode 번호를 제일 앞에 출력)
+합계 8
+67126969 -rw-r--r-- 2 root root 38  5월  8 22:02 basefile
+67126969 -rw-r--r-- 2 root root 38  5월  8 22:02 hardlink
+67126968 lrwxrwxrwx 1 root root  8  5월  8 22:02 softlink -> basefile
+[root@localhost linktest]# cat hardlink
+This is test for link.
+Original file.
+[root@localhost linktest]# cat softlink
+This is test for link.
+Original file.
 
+```
