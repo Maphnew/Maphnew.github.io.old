@@ -7,7 +7,7 @@
 
 > yum은 rpm을 확장한 개념에 가까우므로 rpm의 개념을 익혀야 한다.
 
-- RPM
+#### RPM
 
 > Windows에 설치 파일이 있듯이 *.rpm 확장명의 설치 파일, package라고 부른다.
 
@@ -81,7 +81,7 @@ rpm -qip 패키지파일이름.rpm - 패키지 파일의 상세 정보
 
 Yellowdog Updater Modified
 
--YUM
+#### YUM
 
 > yum 명령어는 rpm 명령어의 패키지 의존성 문제를 완전하게 해결해준다.
 
@@ -92,7 +92,7 @@ Yellowdog Updater Modified
 
 >인터넷에 정상적으로 연결된 상태여야 한다.
 
-- YUM의 기본 사용법
+#### YUM의 기본 사용법
  * 기본 설치 방법
  ```
  # yum -y install 패키지이름
@@ -136,5 +136,50 @@ Yellowdog Updater Modified
 
 > tip: 설치 할 때 yes를 입력하면 CenOS 프로젝트에서 운영하느 사이트에 접속을 시도한다. 그런데 종종 접속이 되지 않을 때가 있다. 그럴 경우 'yum' 명령어는 자동으로 다른 미러 사이트(Mirror site)에 접속을 시도한다. 메시지 중에 'Trying other mirror'라는 메시지가 나오면 정상적으로 접속되는 미러 사이트를 찾는 과정임을 알아두자.
 
-- YUM 고급 
+#### YUM 고급 사용법
+
+- 패키지 그룹 설치
+```
+# yum groupinstall '패키지그룹이름'
+```
+
+> 패키지 그룹 설치는 패키지 그룹에 포함되는 패키지들을 통째로 설치할 때 사용할 수 있다. 패키지 그룹 종류는 <pre>yum grouplist<code>으로 확인 할 수 있다. 또, 설치할 때 피키지 그룹의 이름은 주로 띄어쓰기가 많으므로 꼭 ""안에 써야한다.
+
+```
+[root@localhost ~]# yum grouplist
+Loaded plugins: fastestmirror, langpacks
+There is no installed groups file.
+Maybe run: yum groups mark convert (see man yum)
+Loading mirror speeds from cached hostfile
+ * base: ftp.neowiz.com
+ * extras: mirror.kakao.com
+Available Environment Groups:
+   최소 설치
+   계산 노드
+   인프라 서버
+   파일 및 프린트 서버
+   기본 웹 서버
+   가상화 호스트
+   서버 - GUI 사용
+   GNOME 데스크탑
+   KDE Plasma Workspaces
+   개발 및 창조를 위한 워크스테이션
+Available Groups:
+   개발용 도구
+   과학기술 지원
+   그래픽기반 관리 도구
+   레거시 UNIX 호환성
+   보안 도구
+   스마트카드 지원
+   시스템 관리
+   시스템 관리 도구
+   콘솔 인터넷 도구
+   호환성 라이브러리
+Done
+```
+
+- 패키지 리스트 확인
+```
+# yum list 패키지이름
+```
 
