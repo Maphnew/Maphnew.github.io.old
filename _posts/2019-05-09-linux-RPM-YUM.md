@@ -143,7 +143,7 @@ Yellowdog Updater Modified
 # yum groupinstall '패키지그룹이름'
 ```
 
-> 패키지 그룹 설치는 패키지 그룹에 포함되는 패키지들을 통째로 설치할 때 사용할 수 있다. 패키지 그룹 종류는 <pre>yum grouplist<code>으로 확인 할 수 있다. 또, 설치할 때 피키지 그룹의 이름은 주로 띄어쓰기가 많으므로 꼭 ""안에 써야한다.
+> 패키지 그룹 설치는 패키지 그룹에 포함되는 패키지들을 통째로 설치할 때 사용할 수 있다. 패키지 그룹 종류는 <pre>yum grouplist<code> 으로 확인 할 수 있다. 또, 설치할 때 피키지 그룹의 이름은 주로 띄어쓰기가 많으므로 꼭 ""안에 써야한다.
 
 ```
 [root@localhost ~]# yum grouplist
