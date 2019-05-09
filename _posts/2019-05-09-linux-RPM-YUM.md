@@ -138,9 +138,9 @@ Yellowdog Updater Modified
 
 #### YUM 고급 사용법
 
-- 패키지 그룹 설치
+- 패키지 그룹 설치( "" 주의 )
 ```
-# yum groupinstall '패키지그룹이름'
+# yum groupinstall "패키지그룹이름"
 ```
 
 > 패키지 그룹 설치는 패키지 그룹에 포함되는 패키지들을 통째로 설치할 때 사용할 수 있다. 패키지 그룹 종류는 <pre><code>yum grouplist</code></pre> 으로 확인 할 수 있다. 또, 설치할 때 피키지 그룹의 이름은 주로 띄어쓰기가 많으므로 꼭 ""안에 써야한다.
@@ -182,4 +182,60 @@ Done
 ```
 # yum list 패키지이름
 ```
+
+> CentOS에서 제공하는 패키지 리스트를 보여준다. 예로 'yum list'을 실행하면 모든 패키지 목록을 보여주며, 'yum list httpd*'를 실행하면 httpd이라는 이름이 들어간 패키지 목록을 보여준다. 그리고 'yum list available'을 실행하면 현재 설치가능한 목록을 보여준다.
+
+- 특정 파일이 속한 패키지 이름 확인
+```
+# yum provides 파일이름
+```
+> 특정 파일이 어느 패키지에 들어 있는지를 확인할 수 있다.
+
+- GPG 키 검사 생략
+```
+# yum install --nogpgcheck rpm파일이름.rpm
+```
+> CentOS 7에서 인증되지 않은 rpm 파일을 'yum localinstall'로 설치하면 설치되지 않는 경우도 있다. 그럴 경우 '--nogpgcheck' 옵션을 사용하면 GPG 키 인증을 생략하므로 설치할 수 있따.
+
+- 기존 저장소 목록 지우기
+```
+# yum clean all
+```
+> 기존에 다운로드한 패키지 목록을 지운 다음 yum install을 실행하면 새로 패키지 목록을 다운로드한다.
+
+#### YUM의 작동 방식과 설정 파일
+> 'yum'명령어와 관련된 설정 파일은 **/etc/yum.conf** 와 **/etc/yum.reps.d/** 디렉터리가 있다.
+
+> 다음은 'yum install 패키지이름'을 입력하면 작동하는 순서이다.
+
+1 yum install 입력
+2 /etc/yum.repos.d/ 디렉터리의 repo 파일을 열어서 URL 주소 확인
+3 전체 패키지 목록 파일을 요청
+4 전체 패키지 목록 파일만 다운로드
+5 설치할 패키지와 관련된 패ㅑ키지의 이름을 화면에 출력
+6 y를 입력하면 설치에 필요한 패키지 파일을 요청함
+7 설치할 패키지 파일을 다운로드해서 자동 설치
+
+> CentOS 7 패지키 저장소의 원본 패키지는 **etc/yum.reps.d/CentOS-Base.repo** 파일의 [base]부분에 적혀있다.
+
+> repo 파일을 살펴보자
+# 주석
+name: 저장소 이름
+mirrorlist: 전 세계의 저장소가 URL을 통해 연결되어있다.
+baseurl: URL이 적혀 있어야 한다. http, ftp, file 3가지 중 하나
+gpgcheck: 패키지의 GPG 서명을 확인할지 여부를 지정 1 사용 0 안함
+gpgkey: 아스키 GPG 키가 들어 있는 저장소의 URL
+enabled: 이 저장소를 사용할지 여부를 지정 1 사용 0 안함 - 생략 1
+
+
+
+
+
+
+
+
+
+
+
+
 
