@@ -22,13 +22,21 @@
 ![Smart EOCR](./image/smart-eocr.JPG)
 
 > 계측요소
-- 선간 전압(LV1, LV2, LV3)
-- 부하 전류(L1, L2, L3)
-- 전류 선간 전압(Varg), 평균 상전류(lavg)
-- 유효(kW) / 무효(kVar)전력, 유효 전력량(kWh)
-- 역률(PF), 지락 전류, 전류의 불평형율(%)
-- 온습도 측정
-- 4 ~ 20mA 아날로그 입력
+> - 선간 전압(LV1, LV2, LV3)
+> - 부하 전류(L1, L2, L3)
+> - 전류 선간 전압(Varg), 평균 상전류(lavg)
+> - 유효(kW) / 무효(kVar)전력, 유효 전력량(kWh)
+> - 역률(PF), 지락 전류, 전류의 불평형율(%)
+> - 온습도 측정
+> - 4 ~ 20mA 아날로그 입력
 
 #### 수집 가능 데이터
-> Register Map File 참조
+> Register Map File 자료 참조
+
+#### Remap 분석
+> 1. Remap 정리 자료 20170320 : 0~40, 41 word
+> 2. Remap 정리 자료 20180912 : 0~30, 31 word
+
+- 41 word list
+
+
