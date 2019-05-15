@@ -38,7 +38,17 @@
 > 2. Remap 정리 자료 20180912 : 0~30, 31 word
 
 - 41 word list
+
 ![41 word list](./image/remap20170320.JPG)
 
 - 31 word list
+
 ![31 word list](./image/remap20180912.JPG)
+
+- 제외된 10word
++ 무효전력 (Reactive Power) : 2word
++ 사용시간 (Running Hour) : 2word
++ 과전류 R,S,T (IL1, IL2, IL3 Current) : 6word
+
+> 1. Current, R(IL1), S(IL2), T(IL3), MSB, LSB
+> 전류
