@@ -17,4 +17,17 @@
 
 ### Smart EOCR(IoT EOCR): UYeG-ZE/ME
 
+- 기존 EOCR에 보호, 계측, 진단에서 많은 기능이 추가된 제품
+
 ![Smart EOCR](./image/smart-eocr.JPG)
+
+> 계측요소
+- 선간 전압(LV1, LV2, LV3)
+- 부하 전류(L1, L2, L3)
+- 전류 선간 전압(Varg), 평균 상전류(lavg)
+- 유효(kW) / 무효(kVar)전력, 유효 전력량(kWh)
+- 역률(PF), 지락 전류, 전류의 불평형율(%)
+- 온습도 측정
+- 4 ~ 20mA 아날로그 입력
+
+
