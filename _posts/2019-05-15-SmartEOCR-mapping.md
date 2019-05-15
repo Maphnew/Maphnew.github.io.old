@@ -40,3 +40,5 @@
 - 41 word list
 
 
+- 31 word list
+
