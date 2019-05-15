@@ -17,4 +17,4 @@
 
 ### Smart EOCR(IoT EOCR): UYeG-ZE/ME
 
-![Smart EOCR](./image/smart-eocr.jpg)
+![Smart EOCR](./image/smart-eocr.JPG)
