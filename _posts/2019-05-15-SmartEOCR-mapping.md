@@ -38,7 +38,7 @@
 > 2. Remap 정리 자료 20180912 : 0~30, 31 word
 
 - 41 word list
-
+![41 word list](./image/remap20170320.JPG)
 
 - 31 word list
-
+![31 word list](./image/remap20180912.JPG)
