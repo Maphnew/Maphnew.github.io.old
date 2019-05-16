@@ -88,7 +88,7 @@ As such, from its birth, a crucial requirement for IoT, beyond ubiquitous comput
 
 > 퍼베이시브 컴퓨팅의 결과, 사람을 연결하고 모든 사람에게 컴퓨팅을 제공한다는 목표에서 물리적 영역과 사람이 만든 가상 환경을 융합할 수 있는 사용자와 장치를 원활하게 통합하는 방향으로 초점이 전환되었습니다. 이러한 현상은 IoT(Internet-of-Things) 유토피아로 알려져 있습니다.
 
-> > 역사적 관점에서 볼 때, 1999년 서커스의 Kevin Ashton에 의해 공급망 관리와 RFID(Radio-Frequency Identification) 기술의 사용에 대한 발표 중에 인터넷이라는 용어가 만들어졌습니다. (인간이 입력하는 데이터의 제약 없이)2. 컴퓨터를 제외하고, 실제로 인터넷에 연결되어 있었습니다.
+> 역사적 관점에서 볼 때, 1999년 서커스의 Kevin Ashton에 의해 공급망 관리와 RFID(Radio-Frequency Identification) 기술의 사용에 대한 발표 중에 인터넷이라는 용어가 만들어졌습니다. (인간이 입력하는 데이터의 제약 없이)2. 컴퓨터를 제외하고, 실제로 인터넷에 연결되어 있었습니다.
 
 > 이와 같이, 탄생 이후부터는 유비쿼터스 컴퓨팅을 넘어 IoT에 대한 중요한 요구사항이 유비쿼터스 연결이었습니다. 따라서 IoT는 컨텍스트를 인식하고 다른 엔티티와 통신할 수 있는 다른 개체를 고려합니다. 초기에는 RFID가 IoT 개발의 주범이었지만, 현재 WSN(무선 센서 네트워크)과 Bluetooth 지원 장치는 IoT 트렌드를 주류로 채택하고 있습니다 [Kevin 2009].
 
@@ -169,7 +169,57 @@ Manuscript submitted to ACM
 > SDLC(Software Development Life-Cycle)는 소프트웨어 시스템을 구축하거나 유지하는 프로세스입니다. 일반적으로 예비 개발 분석(예: 요구사항, 아키텍처 설계)부터 개발 후 소프트웨어 테스트 및 평가(예: 검증 및 검증)까지 다양한 단계가 포함됩니다 [Leau 등, 2012].
 > 메뉴얼이 ACM에 제출되었습니다.
 
+![LifeCycle](./image/SoftwareDevelopmentLifeCycle.JPG)
 
+SDLC also encompasses the models and methodologies that the development teams use to develop software systems, in which the methodologies form the framework for planning and controlling the entire development process. Currently, there are two SDLC methodologies categories, the Traditional Software Development ones (e.g. waterfall, Rational Unified Process) and the AGILE Software Development ones (e.g. SCRUM) [Leau et al. 2012]. A holistic view of an SDLC is depicted on Figure 2.
+
+The application of the widespread SDLC processes to design, construct, test, deploy and maintain IoT systems faces different challenges than the ones that are faced when developing traditional software systems, due to the inherent peculiarities of the IoT ecosystem.
+
+Primarily, from a technological viewpoint, there is a considerable amount of gaps on the software engineering body-of-knowledge regarding IoT, including, but not limited to, design, developing and testing. Secondarily, from the work team viewpoint, there is the need for the developers to have a broader base of knowledge that ranges from ultra-large-scale systems to embedded system’s programming.
+
+> SDLC는 또한 개발 팀이 소프트웨어 시스템을 개발하기 위해 사용하는 모델과 방법론을 포함하며, 이 모델에서 방법론은 전체 개발 프로세스를 계획하고 제어하기 위한 프레임워크를 형성합니다. 현재 SDLC 방법론 범주에는 기존의 소프트웨어 개발 범주(예: 폭포, Rational Unified Process)와 AGILE 소프트웨어 개발 범주(예: SCRUM)가 있습니다 [Leau 등, 2012]. SDLC의 전체적인 보기는 그림 2에 나와 있습니다.
+
+> 광범위한 SDLC 프로세스를 IoT 시스템을 설계, 구성, 테스트, 배포 및 유지 보수하기 위해 적용하는 것은 IoT 생태계의 고유한 특성 때문에 기존 소프트웨어 시스템을 개발할 때 직면하는 것과 다른 문제에 직면합니다.
+
+> 기본적으로 기술적 관점에서 보면 IoT에 관한 소프트웨어 엔지니어링 지식에 상당한 차이가 있습니다. 여기에는 설계, 개발 및 테스트가 포함되지만 이에 국한되지는 않습니다. 둘째로, 작업팀 관점에서 보면, 개발자들은 대규모 시스템에서 임베디드 시스템의 프로그래밍에 이르는 광범위한 지식 기반을 가질 필요가 있습니다.
+
+2.3	Design Patterns
+
+Christopher Alexander presented in his book A Pattern Language, circa 1977, the concept of a pattern as a way to document the architecture and urban design solutions at such time3. He further stands that [Alexander et al. 1977]:
+
+Each pattern describes a problem which occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice.
+
+On his research, he further extended the notion of patterns beyond the <problem, forces, solution> triplet, towards a pattern language, which also considers the relationship between different patterns in a specific domain.
+
+> 2.3 디자인 패턴
+
+> 크리스토퍼 알렉산더는 그의 책 A 패턴 언어, 서카 1977에서 그 당시에 건축과 도시 디자인 해결책을 문서화하는 방법으로서 패턴의 개념을 제시했습니다. 그는 또한 [Alexander 등 1977년]을 지지합니다.
+
+> 각 패턴은 우리 환경에서 반복적으로 발생하는 문제를 설명한 다음, 이 문제에 대한 해결책의 핵심에 대해 설명합니다. 따라서 이 솔루션을 두 번 반복하지 않고도 수백만 번 이상 사용할 수 있습니다.
+
+> 그의 연구에 대해서, 그는 패턴의 개념을 <문제, 힘, 해결책> 세 가지 이상의 패턴의 개념을 패턴 언어로 확장했는데, 이 또한 특정 영역의 다른 패턴들 사이의 관계를 고려합니다.
+
+
+These concepts were later borrowed by the software engineering community as a way to capture and share practical knowledge and experience [Meszaros and Doble 1997]. It is widely accepted that a pattern corresponds to a recurrent solution for a specific problem, that is able to achieve an optimal balance among a set of forces in a specific context, yet taking into account the consequences of it.
+
+In software engineering the use of patterns ranges from the high-level architectural patterns, through design patterns until low-level idioms [Bushmann et al. 1996]:
+
+•	Architectural patterns express fundamental structural organisation schemes for software systems, decompos-ing them into subsystems, along with their responsibilities and interrelations.
+•	Design patterns are medium-scale tactical patterns, specified in terms of interactions between elements of object-oriented design, such as classes, relations, and objects, providing generic, prescriptive templates to be instantiated in concrete situations. They do not influence overall system structure but instead define micro-architectures of subsystems and components.
+
+•	Idioms (also known as coding patterns) are low-level patterns that describe how to implement particular aspects of components or relationships using the features of a specific programming language.
+The knowledge contained in these patterns and pattern languages is a result of a synthesising process of systematic analysis and documentation of scattered empirical knowledge, and has, as of today, a profound impact in the way that developers design, build and manage software artefacts.
+
+
+> 이러한 개념은 나중에 소프트웨어 엔지니어링 커뮤니티에서 실용적인 지식과 경험을 포착하고 공유하는 방법으로 대여되었습니다 [Meszaros and Doble 1997]. 패턴은 특정한 문제에 대한 반복적인 해결책에 해당하며, 특정한 맥락에서 일련의 힘들 사이에서 최적의 균형을 이룰 수 있지만, 그것의 결과를 고려할 수 있다는 것은 널리 받아들여지고 있습니다.
+
+> 소프트웨어 엔지니어링에서 패턴의 사용은 높은 수준의 아키텍처 패턴에서 설계 패턴을 거쳐 낮은 수준의 관용어까지 다양합니다 [Bushmann et al. 1996].
+
+> • 아키텍처 패턴은 소프트웨어 시스템을 서브시스템으로 디컴파일하는 기본 구조 조직 체계를 표현하며, 소프트웨어 시스템의 책임과 상호관계를 표현합니다.
+> • 설계 패턴은 객체 지향 설계 요소(예: 클래스, 관계 및 객체) 간의 상호작용 측면에서 지정된 중간 규모의 전술 패턴으로, 구체적인 상황에서 인스턴스화할 수 있는 일반적이고 규범적인 템플릿을 제공합니다. 전체 시스템 구조에 영향을 주지 않고 대신 서브시스템 및 구성 요소의 마이크로 아키텍처를 정의합니다.
+
+> • Idiom(코딩 패턴이라고도 함)은 특정 프로그래밍 언어의 기능을 사용하여 구성 요소 또는 관계의 특정 측면을 구현하는 방법을 설명하는 낮은 수준의 패턴입니다.
+> 이러한 패턴과 패턴 언어에 포함된 지식은 산재한 경험적 지식의 체계적 분석과 문서화를 종합한 결과이며, 오늘날까지 개발자들이 소프트웨어 공정을 설계, 구축 및 관리하는 방식에 지대한 영향을 미치고 있습니다.
 
 
 
