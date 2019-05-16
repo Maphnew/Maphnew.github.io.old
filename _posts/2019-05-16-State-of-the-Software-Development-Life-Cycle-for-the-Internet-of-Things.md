@@ -129,17 +129,35 @@ CERP-IoT 보고서 [Sundmaeker et al. 2010]에는 표 1에 설명된 바와 같�
 IoT Analytics GmbH 보고서 [Scully 2018]에서는 가장 관련성이 높은 기업 수준의 IoT 부문이 스마트 시티, 산업 IoT, 스마트 빌딩, 스마트 카, 스마트 에너지/그리드, 이헬스, 스마트 공급망, 스마트 농업, 스마트 소매이며, 관련성은 그림 1의 차트에 나와 있습니다. 그러나 이 보고서는 소비자 수준의 IoT 세그먼트(예: 웨어러블 및 스마트홈)에는 포함되지 않습니다.
 
 Table 1. IoT Application Domains [Sundmaeker et al. 2010].
+Table 1. IoT 애플리케이션 도메인
+
 |Domain|Description|Indicative Examples|
 |------|-----------|-------------------|
 |Industry|Activities involving financial or commercial transactions between companies, organisations and other entities|Manufacturing, logistics, service sector, bank-ing, financial governmental authorities, inter-mediaries, etc.|
 |Environment|Activities regarding the protection, monitoring and development of all natural resources|Agriculture & breeding, recycling, environmen-tal management services, energy management, etc.|
 |Society|Activities/ initiatives regarding the develop-ment and inclusion of societies, cities and people|Governmental services towards citizens and other society structures (e-participation), e-inclusion (e.g. aging, disabled people), etc.|
 
+|도메인|설명|지식적인 예시|
+|------|-----------|-------------------|
+|산업|기업, 조직 및 기타 기업 간의 금융 또는 상업적 거래를 수반하는 활동|제조, 물류, 서비스 부문, 은행업, 금융 정부 당국, 중개업 등|
+|환경|모든 천연자원의 보호, 감시 및 개발에 관한 활동.농업 및 사육, 재활용, 환경-기술 관리 서비스, 에너지 관리 등|
+|사회|사회,도시,사람들의 발전과포용에 관한 활동/시책.시민 및 기타 사회 구조(e-참여), 전자적폐(예: 고령화, 장애인 등)에 대한 정부 서비스|
+
 Number of IoT Enterprise Projects per Segment
+세그먼트당 IoT Enterprise 프로젝트 수
 ![Graph](./image/Number_of_IoT_Enterprise_PJT_per_Segment.JPG)
 
+Fig. 1. Statistics based upon 1600 public known enterprise IoT projects circa 2018 (not including consumer level IoT projects such as werables and smart homes) [Scully 2018].
 
+그림 1. 2018년 1천600개의 공공 IoT 프로젝트를 기반으로 한 통계입니다(웨러블 및 스마트 홈과 같은 소비자 수준의 IoT 프로젝트 제외 [Scully 2018].
 
+IoT enterprise applications can also be aggregated in three major categories, depending on their role, namely [Buyya and Dastjerdi 2016]: (1) monitoring and actuating, (2) business process and data analysis, and (3) information gathering and collaborative consumption.
+
+Exploiting the open IoT opportunities and different application scenarios can lead to, on one hand, improve people’s quality of life, and, on the other hand, improve the industry and the enterprise world.
+
+IoT 엔터프라이즈 애플리케이션은 역할별로 [Buyya 및 Dastjerdi 2016] (1) 모니터링 및 작동, (2) 비즈니스 프로세스 및 데이터 분석, (3) 정보 수집 및 협업 소비 등 3가지 주요 범주로 통합할 수 있습니다.
+
+개방형 IoT 기회와 다양한 애플리케이션 시나리오를 활용하면 한편으로는 사람들의 삶의 질을 향상시키고, 다른 한편으로는 산업과 기업 세계를 개선할 수 있습니다.
 
 
 
