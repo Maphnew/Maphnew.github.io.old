@@ -1,7 +1,7 @@
 ## State of the Software Development Life-Cycle for the Internet-of-Things
 
-JOÃO PEDRO DIAS, Faculty of Enginnering, University of Porto, Portugal 
-HUGO SERENO FERREIRA, Faculty of Enginnering, University of Porto, Portugal
+- JOÃO PEDRO DIAS, Faculty of Enginnering, University of Porto, Portugal 
+- HUGO SERENO FERREIRA, Faculty of Enginnering, University of Porto, Portugal
 
 >  Software has a longstanding association with a state of crisis considering its success rate. The explosion of Internet-connected devices
 
@@ -158,6 +158,20 @@ Exploiting the open IoT opportunities and different application scenarios can le
 IoT 엔터프라이즈 애플리케이션은 역할별로 [Buyya 및 Dastjerdi 2016] (1) 모니터링 및 작동, (2) 비즈니스 프로세스 및 데이터 분석, (3) 정보 수집 및 협업 소비 등 3가지 주요 범주로 통합할 수 있습니다.
 
 개방형 IoT 기회와 다양한 애플리케이션 시나리오를 활용하면 한편으로는 사람들의 삶의 질을 향상시키고, 다른 한편으로는 산업과 기업 세계를 개선할 수 있습니다.
+```
+2.2	Software Development Life-Cycle
+
+Software Development Life-Cycle (SDLC) is a process of building or maintaining software systems. Typically, it includes various phases, from preliminary development analysis (e.g. requirements, architectural design) to post-development software testing and evaluation (e.g. verification and validation) [Leau et al. 2012].
+ 
+
+Manuscript submitted to ACM
+```
+2.2 소프트웨어 개발 수명 주기입니다.
+
+SDLC(Software Development Life-Cycle)는 소프트웨어 시스템을 구축하거나 유지하는 프로세스입니다. 일반적으로 예비 개발 분석(예: 요구사항, 아키텍처 설계)부터 개발 후 소프트웨어 테스트 및 평가(예: 검증 및 검증)까지 다양한 단계가 포함됩니다 [Leau 등, 2012].
+
+
+메뉴얼이 ACM에 제출되었습니다.
 
 
 
