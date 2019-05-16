@@ -116,6 +116,21 @@ IoT의 좀 더 연결된 세계에 대한 비전은 여러 기업 및 조직에 
 
 > 객체, 인력, 시스템 및 정보 리소스가 상호 연결된 인프라와 지능형 서비스를 통해 물리적 환경과 가상 세계에 대한 정보를 처리하고 대응할 수 있습니다.
 
+2.1.2 Application Scenarios. IoT has been the main booster of technological innovation in different contexts and scenarios since it works as the foundation for any kind of smart space. Such a role is visible through the work done by the Cluster of European Research Projects on the Internet of Things (CERP-IoT) which has identified a large number of application domains for IoT [Sundmaeker et al. 2010].
+
+The CERP-IoT report [Sundmaeker et al. 2010] defines three IoT application domains, as they are described in Table 1. Within these application domains, several fields with open opportunities are presented such as aerospace and aviation (systems status monitoring, green operations), automotive (systems status monitoring, vehicle-to-vehicle and vehicle-to-infrastructure communication), telecommunications, intelligent buildings (automatic energy metering, home automation, wireless monitoring), healthcare (personal area networks, monitoring of parameters, positioning, real-time location systems), independent living (wellness, mobility, monitoring of an ageing population), retail, logistics, supply chain management, people and goods transportation, media, entertainment and insurance.
+
+The IoT Analytics GmbH report [Scully 2018] points that the most relevant enterprise-level IoT segments are Smart City, Industrial IoT, Smart Building, Smart Car, Smart Energy/Grid, eHealth, Smart Supply Chain, Smart Agriculture, Smart Retail, and their relevance is shown in the chart on Figure 1. However, this report does not count with consumer level IoT segment (e.g. wearables and smart homes).
+
+2.1.2 애플리케이션 시나리오입니다. IoT는 모든 종류의 스마트 공간을 위한 기반으로서 작동하기 때문에 다양한 맥락과 시나리오에서 기술 혁신을 주도해 왔습니다. 이러한 역할은 사물인터넷(CERP-IoT)에 대한 유럽연구프로젝트 클러스터(Cluster of European Research Projects)의 작업을 통해 확인할 수 있으며, IoT에 대한 많은 애플리케이션 도메인을 식별했습니다 [Sundmaeger 등, 2010].
+
+CERP-IoT 보고서 [Sundmaeker et al. 2010]에는 표 1에 설명된 바와 같이 IoT 애플리케이션 도메인이 3개 정의되어 있습니다. 이러한 애플리케이션 영역에서는 항공우주 및 항공(시스템 상태 모니터링, 녹색 운영), 자동차(시스템 상태 모니터링, 차량 대 차량 및 차량 대 인프라 통신), 통신, 지능형 빌딩(자동 에너지 측정, 홈 자동화)과 같은 여러 분야가 개방되어 있습니다.무선 모니터링), 의료(개인 영역 네트워크, 매개변수 모니터링, 위치 지정, 실시간 위치 시스템), 독립적 생활(웰니스, 이동성, 고령화 인구의 모니터링), 소매, 물류, 공급망 관리, 사람과 물품 운송, 미디어, 엔터테인먼트 및 보험 등 다양한 서비스를 제공합니다.
+
+IoT Analytics GmbH 보고서 [Scully 2018]에서는 가장 관련성이 높은 기업 수준의 IoT 부문이 스마트 시티, 산업 IoT, 스마트 빌딩, 스마트 카, 스마트 에너지/그리드, 이헬스, 스마트 공급망, 스마트 농업, 스마트 소매이며, 관련성은 그림 1의 차트에 나와 있습니다. 그러나 이 보고서는 소비자 수준의 IoT 세그먼트(예: 웨어러블 및 스마트홈)에는 포함되지 않습니다.
+
+
+
+
 
 
 
