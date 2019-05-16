@@ -171,6 +171,8 @@ Manuscript submitted to ACM
 
 ![LifeCycle](./image/SoftwareDevelopmentLifeCycle.JPG)
 
+![LifeCycle2](./image/SDLC.JPG)
+
 SDLC also encompasses the models and methodologies that the development teams use to develop software systems, in which the methodologies form the framework for planning and controlling the entire development process. Currently, there are two SDLC methodologies categories, the Traditional Software Development ones (e.g. waterfall, Rational Unified Process) and the AGILE Software Development ones (e.g. SCRUM) [Leau et al. 2012]. A holistic view of an SDLC is depicted on Figure 2.
 
 The application of the widespread SDLC processes to design, construct, test, deploy and maintain IoT systems faces different challenges than the ones that are faced when developing traditional software systems, due to the inherent peculiarities of the IoT ecosystem.
