@@ -216,16 +216,18 @@ Done
 6 y를 입력하면 설치에 필요한 패키지 파일을 요청함
 7 설치할 패키지 파일을 다운로드해서 자동 설치
 
+![YUM작동순서](./image/YUM.jpg)
+
 > CentOS 7 패지키 저장소의 원본 패키지는 **etc/yum.reps.d/CentOS-Base.repo** 파일의 [base]부분에 적혀있다.
 
 > repo 파일을 살펴보자
 # 주석
-name: 저장소 이름
-mirrorlist: 전 세계의 저장소가 URL을 통해 연결되어있다.
-baseurl: URL이 적혀 있어야 한다. http, ftp, file 3가지 중 하나
-gpgcheck: 패키지의 GPG 서명을 확인할지 여부를 지정 1 사용 0 안함
-gpgkey: 아스키 GPG 키가 들어 있는 저장소의 URL
-enabled: 이 저장소를 사용할지 여부를 지정 1 사용 0 안함 - 생략 1
+- name: 저장소 이름
+- mirrorlist: 전 세계의 저장소가 URL을 통해 연결되어있다.
+- baseurl: URL이 적혀 있어야 한다. http, ftp, file 3가지 중 하나
+- gpgcheck: 패키지의 GPG 서명을 확인할지 여부를 지정 1 사용 0 안함
+ - gpgkey: 아스키 GPG 키가 들어 있는 저장소의 URL
+- enabled: 이 저장소를 사용할지 여부를 지정 1 사용 0 안함 - 생략 1
 
 
 
