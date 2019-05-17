@@ -8,9 +8,7 @@ Software has a longstanding association with a state of crisis considering its s
 – Internet-of-Things – adds to the complexity of software systems. The particular characteristics of these systems, such as being large-scale and its heterogeneity, pose increasingly new challenges. In this paper, we first briefly introduce the IoT paradigm and the current state of art of software development. Then, we delve into the particularities of developing software for IoT systems and systems of systems, given an overview of what are the current methodologies and tools for design, develop and test such systems. The findings are discussed, revealing open issues and research directions, and reveal that the nowadays IoT software development practices are still lagging behind of what are the current best practices.
 
 
-> 소프트웨어는 성공률을 고려할 때 오랜 기간 동안 위기 상태와 연관되어 있습니다. 인터넷에 연결된 장치가 폭발적으로 증가합니다.
-
-> – 인터넷은 소프트웨어 시스템의 복잡성을 가중시킵니다. 이러한 시스템의 특정 특성(대규모 및 이질성)은 점점 더 새로운 과제를 안고 있습니다. 본 논문에서는 먼저 IoT 패러다임과 소프트웨어 개발의 현황을 간략히 소개합니다. 그런 다음, IoT 시스템 및 시스템용 소프트웨어 개발의 세부 사항을 살펴보고, IoT 시스템 설계, 개발 및 테스트를 위한 현재의 방법론과 툴에 대해 간략하게 설명합니다. 이번 조사 결과에 대해 논의하면서 개방형 문제 및 연구 방향을 제시하고 있으며, IoT 소프트웨어 개발 관행은 현재 모범 사례에 비해 여전히 뒤쳐져 있습니다.
+> 소프트웨어는 성공률을 고려할 때 위기 상태와 오랜 연관성이 있습니다. 인터넷 연결 장치의 급증은 소프트웨어 시스템의 복잡성을 가중시킵니다. 이러한 시스템의 특정 특성(대규모 및 이질성)은 점점 더 새로운 과제를 안고 있습니다. 본 논문에서는 먼저 IoT 패러다임과 소프트웨어 개발의 현황을 간략히 소개합니다. 그런 다음, IoT 시스템 및 시스템용 소프트웨어 개발의 세부 사항을 살펴보고, IoT 시스템 설계, 개발 및 테스트를 위한 현재의 방법론과 툴에 대해 간략하게 설명합니다. 이번 조사 결과에 대해 논의하면서 개방형 문제 및 연구 방향을 제시하고 있으며, IoT 소프트웨어 개발 관행은 현재 모범 사례에 비해 여전히 뒤쳐져 있습니다.
 
 CCS Concepts: • Software and its engineering → Software creation and management; Ultra-large-scale systems; Development frameworks and environments; Software testing and debugging; • Computer systems organization → Embedded and cyber-physical systems;
 
