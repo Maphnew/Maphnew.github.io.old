@@ -1,6 +1,6 @@
 ### 프로그램 설치를 위한 RPM
 
-4.4.1. 프로그램 설치를 위한 Redhat Package Manager
+### 4.4.1. 프로그램 설치를 위한 Redhat Package Manager
 > yum이 나오기전 rpm을 주로 사용했음.
 
 > yum은 rpm의 개념과 기능을 포함하기 때문에 최신 버전 CentOS에서는 yum을 사용하면된다.
@@ -77,7 +77,7 @@ rpm -qip 패키지파일이름.rpm - 패키지 파일의 상세 정보
 
 > 의존성있는 rpm 설치하면 오류, yum으로 편리하게 설치. This is like the yarn.
 
-4.4.2 편리하게 패키지를 설치하는 YUM
+### 4.4.2 편리하게 패키지를 설치하는 YUM
 
 Yellowdog Updater Modified
 
@@ -226,7 +226,7 @@ Done
 - mirrorlist: 전 세계의 저장소가 URL을 통해 연결되어있다.
 - baseurl: URL이 적혀 있어야 한다. http, ftp, file 3가지 중 하나
 - gpgcheck: 패키지의 GPG 서명을 확인할지 여부를 지정 1 사용 0 안함
- - gpgkey: 아스키 GPG 키가 들어 있는 저장소의 URL
+- gpgkey: 아스키 GPG 키가 들어 있는 저장소의 URL
 - enabled: 이 저장소를 사용할지 여부를 지정 1 사용 0 안함 - 생략 1
 
 
