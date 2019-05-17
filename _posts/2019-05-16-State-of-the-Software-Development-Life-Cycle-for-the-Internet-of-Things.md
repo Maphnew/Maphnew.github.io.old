@@ -31,9 +31,7 @@ João Pedro Dias and Hugo Sereno Ferreira. 2018. State of the Software Developme
 
 Software has a long-standing association with states of crisis considering its success rate. From a developer’s perspective, developing software systems is hard, and developers have a high-proneness for introducing bugs during the development of such systems.
 
-The explosion of Internet-connected devices with computing capabilities, also known as the Internet-of-Things (IoT)
-
-– the recent peak of ubiquitous connectivity and computing – adds to the complexity of software systems. One of the keys successes of IoT depends on the ability to seamlessly interconnect the plethora of available devices and services.
+The explosion of Internet-connected devices with computing capabilities, also known as the Internet-of-Things (IoT)– the recent peak of ubiquitous connectivity and computing – adds to the complexity of software systems. One of the keys successes of IoT depends on the ability to seamlessly interconnect the plethora of available devices and services.
 However, this comes with an increase in complexity that might further impact an already low success rate of software project development. The very nature of IoT systems is characterized by (1) being ultra-large-scale, (2) having highly-dynamic topologies, (3) being highly heterogeneous, and (4) their multi-domain nature. Together, they pose increasingly new challenges on how to design, develop and maintain them.
 
 On this paper, we delve into an analysis on the current state of art of software engineering practices for the IoT, focusing in three phases of the software development life-cycle, namely, the design, develop and test software systems.
@@ -42,10 +40,8 @@ On this paper, we delve into an analysis on the current state of art of software
 
 > 소프트웨어는 성공률을 고려했을 때 오랫동안 위기 상태와 관련이 있습니다. 개발자 입장에서는 소프트웨어 시스템 개발이 어렵고, 개발자들은 그러한 시스템 개발 중에 버그를 도입하는 경향이 강합니다.
 
-IoT(Internet-of-Things)라고도 하는 컴퓨팅 기능을 갖춘 인터넷 연결 장치가 폭발적으로 증가합니다.
-
-> – 최근 유비쿼터스 연결 및 컴퓨팅이 최고조에 달하면서 소프트웨어 시스템의 복잡성이 가중되고 있습니다. IoT의 주요 성공 요인 중 하나는 수많은 사용 가능한 장치와 서비스를 원활하게 상호 연결하는 능력에 달려 있습니다.
-> 그러나 이는 복잡성이 증가하여 이미 낮은 소프트웨어 프로젝트 개발 성공률에 더욱 영향을 미칠 수 있습니다. IoT 시스템의 본질은 (1) 초고대규모, (2) 고동적 토폴로지, (3) 고이종, (4) 다중 도메인 특성을 갖는 것이 특징입니다. 이 두 가지가 함께 설계, 개발 및 유지 보수 방법에 있어 점점 더 새로운 과제가 되고 있습니다.
+> 최근 유비쿼터스 연결 및 컴퓨팅의 정점인 IoT(Internet-of-Things)라고도 하는 컴퓨팅 기능을 갖춘 인터넷 연결 장치가 폭발적으로 증가하면서 소프트웨어 시스템의 복잡성이 가중되고 있습니다. IoT의 주요 성공 요인 중 하나는 수많은 사용 가능한 장치와 서비스를 원활하게 상호 연결하는 능력에 달려 있습니다.
+그러나 이는 복잡성이 증가하여 이미 낮은 소프트웨어 프로젝트 개발 성공률에 더욱 영향을 미칠 수 있습니다. IoT 시스템의 본질은 (1) 초고대규모, (2) 고동적 토폴로지, (3) 고이종, (4) 다중 도메인 특성을 갖는 것이 특징입니다. 이 두 가지가 함께 설계, 개발 및 유지 보수 방법에 있어 점점 더 새로운 과제가 되고 있습니다.
 
 > 본 논문에서는 IoT용 소프트웨어 엔지니어링 사례의 현황에 대해 살펴보고, 소프트웨어 개발 라이프사이클의 3단계, 즉 설계, 개발 및 테스트 소프트웨어 시스템을 중점적으로 분석합니다.
 
