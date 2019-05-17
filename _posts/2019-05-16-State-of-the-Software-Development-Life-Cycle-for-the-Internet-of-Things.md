@@ -3,9 +3,7 @@
 - JOÃO PEDRO DIAS, Faculty of Enginnering, University of Porto, Portugal 
 - HUGO SERENO FERREIRA, Faculty of Enginnering, University of Porto, Portugal
 
-Software has a longstanding association with a state of crisis considering its success rate. The explosion of Internet-connected devices
-
-– Internet-of-Things – adds to the complexity of software systems. The particular characteristics of these systems, such as being large-scale and its heterogeneity, pose increasingly new challenges. In this paper, we first briefly introduce the IoT paradigm and the current state of art of software development. Then, we delve into the particularities of developing software for IoT systems and systems of systems, given an overview of what are the current methodologies and tools for design, develop and test such systems. The findings are discussed, revealing open issues and research directions, and reveal that the nowadays IoT software development practices are still lagging behind of what are the current best practices.
+Software has a longstanding association with a state of crisis considering its success rate. The explosion of Internet-connected devices – Internet-of-Things – adds to the complexity of software systems. The particular characteristics of these systems, such as being large-scale and its heterogeneity, pose increasingly new challenges. In this paper, we first briefly introduce the IoT paradigm and the current state of art of software development. Then, we delve into the particularities of developing software for IoT systems and systems of systems, given an overview of what are the current methodologies and tools for design, develop and test such systems. The findings are discussed, revealing open issues and research directions, and reveal that the nowadays IoT software development practices are still lagging behind of what are the current best practices.
 
 
 > 소프트웨어는 성공률을 고려할 때 위기 상태와 오랜 연관성이 있습니다. 인터넷 연결 장치의 급증은 소프트웨어 시스템의 복잡성을 가중시킵니다. 이러한 시스템의 특정 특성(대규모 및 이질성)은 점점 더 새로운 과제를 안고 있습니다. 본 논문에서는 먼저 IoT 패러다임과 소프트웨어 개발의 현황을 간략히 소개합니다. 그런 다음, IoT 시스템 및 시스템용 소프트웨어 개발의 세부 사항을 살펴보고, IoT 시스템 설계, 개발 및 테스트를 위한 현재의 방법론과 툴에 대해 간략하게 설명합니다. 이번 조사 결과에 대해 논의하면서 개방형 문제 및 연구 방향을 제시하고 있으며, IoT 소프트웨어 개발 관행은 현재 모범 사례에 비해 여전히 뒤쳐져 있습니다.
@@ -218,7 +216,45 @@ The knowledge contained in these patterns and pattern languages is a result of a
 > 이러한 패턴과 패턴 언어에 포함된 지식은 산재한 경험적 지식의 체계적 분석과 문서화를 종합한 결과이며, 오늘날까지 개발자들이 소프트웨어 공정을 설계, 구축 및 관리하는 방식에 지대한 영향을 미치고 있습니다.
 
 
+3 DESIGNING THE INTERNET-OF-THINGS
+3.1 Architectural Styles
+There are several basic building blocks for IoT systems, which have been around for many years, such as sensory devices, remote service invocation, communication networks and context-aware processing of events. The IoT initiative tries to leverage these well-known building blocks in a unified fashion, where the smart objects and the human beings responsible for operating them (if needed) are capable of universally and ubiquitously communicating with each other.
+
+A holistic system architecture for IoT needs to guarantee flawless operation of its components and fuse the physical and virtual realms. For reaching such an objective, the IoT systems need to be dependable, adaptable, handle dynamic interactions, highly-scalable and human-centric [Buyya and Dastjerdi 2016].
+
+These systems follow an architectural style that is mostly compatible with nowadays standards, both in communica-tion aspects and design aspects. Thus, the most common foundation of IoT systems is Web Services, influencing the way they are built and communicate.
 
 
+3 인터넷을 설계하다
+3.1 건축 양식
+감각 장치, 원격 서비스 호출, 통신 네트워크 및 이벤트의 컨텍스트 인식 처리와 같은 오랜 기간 동안 있었던 IoT 시스템을위한 몇 가지 기본 구성 요소가 있습니다. IoT 이니셔티브는 이러한 잘 알려진 빌딩 블록을 통일 된 방식으로 활용하려고하는데, 스마트 오브젝트와 스마트 오브젝트 (필요한 경우)를 조작 할 책임이있는 인간은 보편적으로 그리고 유비쿼터스 적으로 서로 통신 할 수 있습니다.
+
+IoT를위한 전체 론적 시스템 아키텍처는 구성 요소의 완벽한 작동을 보증하고 실제 및 가상 영역을 통합해야합니다. 이러한 목표를 달성하기 위해 IoT 시스템은 신뢰할 수 있고 적응 가능해야하며 동적 상호 작용, 고도로 확장 가능하며 인간 중심적이어야한다 [Buyya and Dastjerdi 2016].
+
+이 시스템은 통신 스타일과 디자인 측면에서 요즘 표준과 대부분 호환되는 아키텍처 스타일을 따릅니다. 따라서, IoT 시스템의 가장 보편적 인 기초는 웹 서비스로서, 웹 서비스가 구축되고 통신되는 방식에 영향을 미친다.
+
+As such, IoT systems are usually based on either a Representational State Transfer (REST4) architecture or a Simple Object Access Protocol (SOAP) architecture. Nonetheless, either architecture is service-oriented (SOA), providing a set of services by exposing their own arbitrary sets of operations, allowing interoperability among the heterogeneous devices [Buyya and Dastjerdi 2016].
+
+On one hand, SOAP is a more traditional architectural style, being heavier in terms of bandwidth, more complex and use Extensible Markup Language (XML) data-exchange format. On the other hand, REST is more flexible, coupled with JavaScript Object Notation (JSON) data-exchange format, and is generally faster and uses less bandwidth.
+
+There are two main architectural approaches when developing IoT systems, namely, mashup-based and model-based [Prehofer and Chiarabini 2013, 2015]. In mashup-based approaches, systems are developed by composing, or mashing up, existing services. Thus, mashups are often used for personalized, situational, short-lived and non-business critical applications developed, typically based upon familiar web development tools and technologies (e.g. application prototyping) [Blackstock and Lea 2012a]. Model-based approaches base itself on the ability to describe a system on a higher level of abstraction, thus permitting a very expressive modelling of systems, possibly with code generation [Prehofer and Chiarabini 2013, 2015]. Combinations of this two approaches (a hybrid between mashup and model-based) are not found in the literature.
+
+이와 같이 IoT 시스템은 일반적으로 Representational State Transfer (REST4) 아키텍처 또는 Simple Object Access Protocol (SOAP) 아키텍처를 기반으로합니다. 그럼에도 불구하고이 아키텍처는 SOA (Service Oriented Architecture)로, 임의의 작업 집합을 노출하여 일련의 서비스를 제공함으로써 이기종 장치 간 상호 운용성을 보장합니다. [Buyya and Dastjerdi 2016]
+
+SOAP은보다 전통적인 아키텍처 스타일로, 대역폭면에서 무겁고 복잡하며 XML (eXtensible Markup Language) 데이터 교환 형식을 사용합니다. 반면에 REST는 JSON (JavaScript Object Notation) 데이터 교환 형식과 결합 된보다 유연하며 일반적으로 더 빠르며 더 적은 대역폭을 사용합니다.
+
+IoT 시스템을 개발할 때 매쉬업 기반 및 모델 기반 [Prehofer and Chiarabini 2013, 2015]이라는 두 가지 주요 아키텍처 접근 방식이 있습니다. 매쉬업 기반 접근 방식에서 시스템은 기존 서비스를 구성하거나 매시업하여 개발됩니다. 따라서 매시업은 친숙한 웹 개발 도구 및 기술 (예 : 응용 프로그램 프로토 타이핑) [Blackstock and Lea 2012a]를 기반으로 개발 된 맞춤형, 상황 별, 단기 및 비업무 핵심 응용 프로그램에 주로 사용됩니다. 모델 기반 접근법은 더 높은 추상화 수준에서 시스템을 기술 할 수있는 능력을 기반으로하므로 코드 생성을 통해 시스템의 매우 표현적인 모델링을 가능하게합니다 [Prehofer and Chiarabini 2013, 2015]. 이 두 가지 접근 방식 (매쉬업과 모델 기반의 혼합)은 문헌에서 찾을 수 없습니다.
+
+
+3.2	IoT Interoperability Standards
+
+Different entities have been working on different standards to ensure an interoperable Internet-of-Things, simply put a common language that devices can speak between them and different applications, thus, reducing the IoT fragmentation. A summary of the most known initiatives is given on Table 2, and the most widespread are analysed in the following paragraphs.
+
+3.2 IoT 상호 운용성 표준
+
+상호 운용성있는 인터넷 -to-Things를 보장하기 위해 서로 다른 기업들이 서로 다른 표준을 사용하고 있으며, 단순히 장치가 서로 다른 응용 프로그램간에 말할 수있는 공용 언어를 넣어 IoT 단편화를 줄입니다. 가장 잘 알려진 이니셔티브의 요약은 표 2에 나와 있으며 가장 널리 보급 된 내용은 다음 단락에서 분석됩니다.
+
+
+![Over view](./image/overview_of_the_IoT_Enabling_Models_and_API's.JPG)
 
 
