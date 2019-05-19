@@ -428,3 +428,274 @@ NooDL 20
 NooDL은 디자이너와 개발자가 인터페이스, 로직 및 데이터 흐름을 시각적으로 만들 수있는 비주얼 개발 환경입니다. IoT에 초점을 맞추지 않지만 IoT 기반 시스템 프로그래밍도 다루며 노드, 연결 및 계층 구조를 기반으로합니다.
 DGLux5 21
 DGLux5는 드래그 앤 드롭 방식의 신속한 응용 프로그램 개발 및 시각화 플랫폼으로, 실시간 데이터 기반 응용 프로그램 및 대시 보드를 개발할 수 있습니다. 사용 된 언어를 사용하면 서로 다른 데이터 시스템과 여러 데이터 공급자를 단일 인터페이스로 통합 할 수 있습니다. 샘플 워크 플로우를 제공합니다.
+GraspIO 24
+GraspIO 입출력을위한 Graphical Smart Program은 IoT 및 Robotics 시스템을 신속하게 구축 할 수있는 하드웨어 및 부품 소프트웨어 플랫폼입니다. 그러나이 도구는 아직 개발 중이므로 사용 된 시각적 언어에 대한 세부 사항이 부족합니다.
+Wyliodrin 25
+Wyliodrin은 Linux 기반 임베디드 시스템 (Raspberry Pi, Intel Galileo) 프로그래밍을위한 온라인 IDE입니다. 하드웨어와 상호 작용할 수있는 드래그 앤 드롭 비주얼 프로그래밍 언어를 제공하며 파이썬이나 자바 스크립트를 사용하여 쉽게 확장 할 수 있습니다.
+제 노디스 26
+Zenodys는 Industry 4.0을위한 완벽한 시각적 IoT 플랫폼입니다. 시각적 인 개발 콘솔 인 ZenoVisual을 제공하여 시각적 프로그램 워크 플로가 IoT 장치에서 가져온 데이터를 처리하고 타사 응용 프로그램 또는 API와 통합 할 수 있도록합니다. 개발 된 시스템은 클라우드 또는 사내에서 실행될 수 있습니다.
+ASU VIPLE 27 [첸 앤드 루카 2016]
+Visual IoT / Robotics 프로그래밍 언어 환경 (VIPLE)은 Microsoft Robotics Developer Studio28 기반이며 그 기능을 확장합니다. 비주얼 프로그래밍 언어를 사용하여 개방형 프로그래밍 API 및 인터페이스를 사용하여 다양한 IoT 시스템 및 로보틱스 플랫폼을 개발합니다.
+VIPLE 프로그램은 백엔드 PC에서 실행되며 센서 및 모터 피드백을 수신하고 로봇 모터에 명령을 보내고 Bluetooth 및 Wi-Fi 연결 (JSON 객체를 사용하여 통신)을 모두 지원합니다.
+
+그림 12. Flowhub IoT Platform의 데이터 흐름 예.
+
+Flowhub IoT 플랫폼 29 
+Flowhub은 흐름 기반 프로그래밍을위한 웹 기반 IDE입니다. 시각적 언어를 사용하면 시각적 블록 및 연결을 시스템 논리를 프로그래밍하는 방법으로 사용할 수 있습니다. 클라이언트와 서버 모두를위한 NoFlo.js를 기반으로하며 FBP 네트워크 프로토콜을 사용하여 타사 시스템에 연결할 수 있습니다. 플랫폼에서의 데이터 흐름의 예가 그림 12에 나와 있습니다.
+
+XOD 30
+XOD는 에지 장치 프로그래밍 플랫폼 (마이크로 컨트롤러)입니다. 시각적 언어를 사용하여 장치를 프로그래밍 한 다음 대상 플랫폼에 대한 원시 코드를 생성합니다. 언어에서 노드는 센서, 모터 또는 릴레이와 같은 물리적 장치 또는 추가, 비교 또는 텍스트 연결과 같은 일부 작업을 나타내는 블록입니다. 각 노드에는 처리 할 값을 승인하고 결과를 리턴하는 하나 이상의 입력이 있습니다. 출력에서 입력으로의 링크를 생성하면 데이터 경로를 구축하여 한 노드가 다른 노드로 값을 공급할 수있게합니다.
+
+그림 13. 패킷 트레이서 7.0 시각적 다이어그램의 예.
+
+패킷 트레이서 7.0 31
+Cisco Packet Tracer는 다양한 장치 및 연결을 식별하는 방법으로 시각 패러다임을 사용하는 네트워크 시뮬레이션 도구입니다. IoT 솔루션의 개발을 허용하지 않지만 IoT 아키텍처 및 시스템의 프로토 타이핑을 가능하게하는 시각적 언어를 제공합니다. 예제 다이어그램은 그림 13에 나와 있습니다.
+Visuino 32
+Visuino는 Arduino 기반 보드를위한 시각적 프로그래밍 환경입니다. 이 도구는 하드웨어와 상호 작용할 수있는 끌어서 놓기 (drag-and-drop) 시각적 프로그래밍 언어를 제공 한 다음 다른 모듈 간의 연결을 만듭니다.
+WoTKit 33 [Blackstock and Lea 2012b]
+WoTKit은 클라우드 계층 IoT 솔루션을 개발할 수 있도록 클라우드 호스팅 Node-RED 서비스 (FRED)를 제공합니다. Node-RED와 동일한 시각적 프로그래밍 원칙과 추가 확장 및 통합을 따릅니다. 이 솔루션은 FRED와 긴밀하게 통합 된 STS IoT 플랫폼의 일부입니다.
+
+로스 탄 34
+Losant는 확장 가능한 장치 관리, 데이터 수집, 데이터 시각화 및 데이터 반응 워크 플로우를 실시간으로 제공하는 개발자 플랫폼입니다. 따라서 구현 된 시각적 언어는 워크 플로우를 기반으로하며 IoT의 데이터 구성 요소에 중점을두고 장치가 서로 통신하고 다른 서비스와 통신하는 방법을 정의 할 수 있습니다.
+IFTTT 35
+IFTTT는 if-this-then-that 규칙을 개발하기 위해 시각적 프로그래밍 언어를 이용하는 모바일 응용 프로그램입니다. 이 언어는 여러 타사와의 통합을 제공합니다. IoT 솔루션에 초점을 맞추지 않았음에도 불구하고 시장에서 여러 IoT 제품과의 통합을 제공하여 행동을 프로그래밍 할 수 있습니다.
+블린크 36
+Blynk은 디지털 대시 보드를 사용하여 Arduino 및 Raspberry Pi 장치를 제어 할 수있는 모바일 응용 프로그램입니다. 위젯을 드래그 앤 드롭하여 양식과 유사한 방식으로 구성 할 수 있습니다.
+EPIDOSITE [Li et al. 2017b]
+EPIDOSITE는 최종 사용자 개발 (EUD)에 초점을 맞춘 모바일 프로그래밍 방식 데모 시스템입니다. 그것은 이전의 모바일 PBD 시스템 인 Sugilite [Li et al. 2017a], 안드로이드의 접근성 API를 사용하여 안드로이드 애플 리케이션의 자동화 작업을 지원하고, 다른 IoT 애플리케이션을 사용하는 동안 관련 UI 요소와 함께 모든 사용자 상호 작용을 전화로 녹음 한 다음 녹음을 처리하고 작업을 수행하기위한 재사용 가능한 스크립트. EPIDOSITE는 IoT 장치 프로그래밍 (스크립트, 외부 서비스 및 장치를 트리거하는 새로운 방법)을 지원하는 새로운 기능과 메커니즘을 추가함으로써 Sugilite를 확장합니다.
+
+
+5.2.7 VPL 비교. 현재 IoT 프로그래밍의 범위 내에서 이미 상당수의 VPL이 시장에 나와 있습니다. 이러한 언어에 대한 비교 개요는 표 4에 나와 있습니다. 대부분의 언어에서 표 4에 표시된 이름은 언어 자체가 아니라 언어를 지원하는 IDE 또는 플랫폼에 속합니다.
+첫째, IoT 레이어 별 언어 구분에 따라 각 언어별로 사용할 수있는 솔루션 수가 균형을 이루고 있음을 알 수 있습니다. 그러나 안개 레이어를 대상으로하는 대부분의 솔루션은 구름 레이어에서도 사용할 수 있습니다 (대부분이 안개 레이어와 구름 레이어에 공통적 인 Linux 기반 시스템을 대상으로하기 때문에). 또한 가장자리 레이어 (장치)를 대상으로하는 언어는이 계층에만 매우 한정적입니다 (대부분 하드웨어 입력 / 출력과의 직접적인 상호 작용 때문 임).
+추상화 수준과 관련하여 대부분의 언어는 높은 수준과 낮은 수준 모두에서 절차 적 추상화를 사용합니다. 데이터 추상화에 중점을 두는 소수지만, 일반적으로 IoT 아키텍처의 상위 계층에 중점을 둡니다.
+대부분의 언어는 데이터 흐름 또는 구성 요소 기반의 패러다임을 기반으로합니다. 대부분의 IoT 시스템은 데이터 수집 및 변환을 담당하고 다른 한편으로는 하드웨어에서 소프트웨어 기반의 다른 구성 요소 간의 추상화를 처리합니다. IFTTT와 같이 사용자 수준의 상호 작용을 목표로하는 언어는 이해가 쉽기 때문에 규칙 기반 패러다임을 따릅니다.
+
+각 VPL이 적합한 카테고리에 관해서는 가장 잘 알려진 Node-RED, 일반적으로 에지 레이어를 대상으로하는 제약 기반의 것, 클라우드 레이어에서 사용되는 언어에 공통적 인 시각적 인 시각적 인 것 같은 좋은 분포가 있습니다 . 표현식이 적 으면 양식 기반 객체는 Blynk 플랫폼에서만 사용됩니다.
+제어 흐름 관점에서, 에지 계층을 대상으로하는 대부분의 언어는이 계층에 사용 된 비 시각적 언어와 마찬가지로 필수적인 명령 흐름 (예 : Arduino 언어)을 필요로합니다. Node-RED와 같은 더 높은 수준의 언어는 선언적 철학을 따릅니다.
+개발자 중심의 관점에서 볼 때 솔루션의 개방성은 개발 프로세스에 큰 영향을 미치므로 언어 ​​내부에 기능을 향상 / 추가 할 수 있습니다. IoT 용 VPL의 맥락에서 볼 때, 오픈 소스와 클로즈드 소스 솔루션 간에는 균형이 있습니다. 비록 스크래치 (scratch) 언어 (38)와 같은 오픈 소스 솔루션에 기초한 클로즈 소스 언어가있다.
+
+표 4. 인터넷의 비주얼 프로그래밍 환경과 결합 된 비주얼 프로그래밍 언어 비교 개요 37. 특성화는 5.2.1 절의 제안에 기초한다.
+
+각 언어에 대한 대상 플랫폼에서 가장자리 레이어를 대상으로하는 언어가 더 제한적이고 특정 하드웨어에 의존한다는 것이 눈에.니다. 그러나 대부분의 다른 언어는 안개 장치 (예 : 라스베리 파이) 및 클라우드 시스템 시장에서 널리 보급 된 Linux 기반 운영 체제를 대상으로합니다.
+다른 유용한 측면은 언어가 확장 성 및 타사 통합 지원 측면에서 갖는 능력입니다. 대부분의 언어가 일종의 확장 기능을 지원하고 제 3 자 시스템과 쉽게 통합되는 점이 눈에.니다.
+요약하면, IoT VPL 특성은 다양한 응용 범위를 목표로하는 다양한 솔루션으로 잘 분산되어 있습니다. 개방형 문제, 즉 가장자리 층에서 주로 이질성을 다루는 방법과 IoT 시스템의 복잡성이 증가함에 따라 이러한 언어가 어떻게 확장되는지에 관한 문제가 있습니다.
+
+5.3 요약
+Prehofer et al. 인터넷으로부터의 그들의 작업에 대한 포인트들 모델 기반 개발 [Prehofer and Chiarabini 2015] (그리고 3.1 절에서 언급 함)에는 IoT 시스템 개발을위한 두 가지 도구, 즉 매쉬업 접근법과 모델 기반 접근법이있다. 지금까지 Node-RED와 ThingML의 두 가지 유형에 속하는 가장 잘 알려진 도구 중 두 가지가 설명되었습니다.
+이 두 가지 도구를 분석하여 몇 가지 결론을 내 렸습니다. 매시업 도구로서의 노드 -RED는 모델 (및 모델 @ 런타임) 또는 생명과 관련된 모든 것을 활용하는 데있어서 몇 가지 부족한 점이 있습니다. 그러나 IoT 도메인에서 참조로 사용할 수있는 드래그 앤 드롭 (drag-n-drop) 비주얼 프로그래밍 인터페이스를 사용하기 쉽지만, 생동감과 피드백 루프 요구의 필요성을 수용하기 위해 확장해야합니다.
+ThingML은 개발 된 IoT 시스템의 한 방법으로 모델을 최대한 활용하지만, 기본적으로 텍스트 기반 인 이러한 시스템을 개발하는 방법으로 시각 표기법을 사용하지 않습니다. 게다가 앞서 언급했듯이, 모델을 런타임에 포용하는 방법에 대한 예비 연구가 있었으므로이 개념을 수용하기 위해 처음부터 설계되지 않았기 때문에 몇 가지 한계가있었습니다.
+모델을 활용하고 설계에 따라 프로그래밍 할 수있는 IoT에 적합한 개발 환경을 갖추려면 이러한 시스템에서 얻은 교훈과 작동 (노드 -RED의 시각적 표기법 등)이 활용 될 수 있어야하며이를 사용해야합니다. 새로운 솔루션으로 그러나 이러한 시스템의 모든 구성 요소는 상호간에 상호 영향을 많이 받기 때문에이 솔루션 중 하나를 새로운 개발 솔루션의 기반으로 사용하는 것은 불가능합니다.
+이 백서에서는 Internet-of-Things에 대한 비주얼 프로그래밍 언어의 경관에서 사용 가능한 솔루션에 대한 개요를 제공하는 데 중점을 둡니다. IoT 및 시각적 프로그래밍에 대한 소개와 IoT 도메인에서의 그러한 프로그래밍 접근법의 적용 가능성이 제시됩니다.
+VPL의 특성화에 관한 문헌의 개요는 제공되지만, IoT 시나리오의 특이성에 접근 할 때 문헌에 차이가있다. 이와 같이 IoT VPL을 특성화하기위한 제안은 현존하는 문헌과 IoT 개발에서 중요한 몇 가지 측면을 토대로 제공됩니다.
+IoT 개발을 겨냥한 사용 가능한 비주얼 프로그래밍 언어에 대한 개요가 정교화되었고 제안 된 분류 지침을 사용하여 사용 가능한 솔루션의 전반적인 비교가 제공되었습니다.
+이 비교를 통해 개발의 다양한 측면을 다루는 유용한 솔루션이 있다는 것을 관찰했습니다. 그러나 가장자리 개발 및 확장 성 관점에서 특히 일부 제한 사항이 발견되었습니다. 기존의 언어를 향상 시키거나 새로운 언어를 창조하는 데 커뮤니티가 해결해야하는 연구 과제가 아직 남아 있습니다.
+인터넷 - 오브 - 사물.
+
+6 인터넷의 테스트(6	TESTING THE INTERNET-OF-THINGS)
+(Internet-of-Things)는 하드웨어와 소프트웨어의 결합을 통해 실제 개체가 인터넷 연결되고 고유하게 식별 가능하면서 주변 환경을 감지하고 상호 작용할 수있게합니다 [Whitmore et al. 2015]. 이와 같이 IoT 기반 시스템의 성능, 확장 성, 신뢰성 및 보안을 보장하기 위해서는 저수준 / 하드웨어 사양에서부터 높은 수준의 사양에 이르기까지 시스템에 포함되는 다양한 계층과 구성 요소를 테스트하는 데 중점을 둘 필요가 있습니다 레벨 구성 요소. IoT 범위에서 하위 수준과 상위 수준 구성 요소 사이에 선을 긋기는 어렵지만 강력하게 연결되고 종속되기 때문에 일반적으로 이들을 테스트하는 데 사용되는 방법과 기술은 비슷합니다.
+
+6.1 테스트 수준 및 방법
+테스트 접근법은 테스트 및 목적의 범위에 따라 하나 이상의 수준이 될 수 있습니다. 따라서 다음과 같이 다른 테스트 레벨이 정의됩니다 [Beizer 2003].
+단위 테스트 개별 하드웨어 또는 소프트웨어 단위 또는 관련 단위의 그룹에 대한 테스트 [IEEE 1990]. 이것은 시스템의 각 부분을 분리하여 구성되며 개별 부품이 요구 사항과 기능에 적합 함을 보여줍니다.
+통합 테스팅 (Integration Testing) 소프트웨어 및 / 또는 하드웨어 구성 요소는 결합되어 어떻게 상호 작용 하는지를 확인하기 위해 결합 및 테스트됩니다 [IEEE 1990].
+시스템 테스팅 특정 요구 사항 내에서 시스템의 컴플라이언스 및 동작을 확인하기위한 완벽한 통합 시스템 테스트 [IEEE 1990]
+수락 테스트 (Acceptance Testing) 시스템이 수락 기준을 만족하는지, 고객, 사용자 또는 기타 권한있는 주체가 시스템을 수락할지 여부를 결정할 수 있는지 여부를 결정하기 위해 실시되는 공식 테스트 [IEEE 1990]
+테스트중인 시스템 (SUT)을 테스트하는 데 여러 가지 방법을 사용할 수 있는데, 화이트 박스 테스트 [Ostrand 2002], 그레이 박스 테스트 [Linzhang et al. 2004] 및 블랙 박스 테스팅 [Edwards 2001]을 참조하십시오. 이들 방법을 이하에 기술한다 :
+화이트 박스 테스트 SUT의 내부는 모두 눈에 띄고 알려 지므로이 정보를 사용하여 테스트 시나리오를 만들 수 있습니다. 또한 화이트 박스 테스트는 오류 감지에 국한되지 않고 오류를 감지 할 수도 있습니다.
+블랙 박스 테스팅 SUT 내부 내용은 숨겨져 있으며 시스템 또는 모듈 입력에 대한 유일한 지식
+출력은 실제 상황에 더 가깝다는 것이 알려져있다.
+그레이 박스 테스팅 두 가지 이전 기술의 혼합이 사용됩니다. SUT의 내부에 대한 정보가 사용되지만, 테스트는 오류 만 감지되는 현실적인 조건에서 수행됩니다.
+IoT 시스템은 본질적으로 복잡하며, 많은 소프트웨어 및 하드웨어 구성 요소, 모듈 및 아키텍처에 따라 다르다. 따라서 테스트해야하는 다양한 변수의 결과에 다양한 테스트 요구가 나타납니다. 예를 들어, 높은 이질성, 대규모, 동적 환경, 실시간 요구, 보안 및 개인 정보 보호의 의미, 테스트 자동화의 어려움 등 다양한 문제를 식별 할 수 있습니다. 따라서 다양한 IoT 계층에서 서로 다른 테스트 요구 사항이 나타납니다 (그림 5).
++ 에지 테스트 : 마이크로 컨트롤러 (예 : Arduino) 및 프로그래머블 로직 컨트롤러 (PLC)와 같이 IoT 시스템의 하위 레벨 부분에 대한 테스트가 필요합니다. 임베디드 시스템 테스트와 같은 테스트 접근법은 전형적으로 에지 레이어에 대한 테스트를 수행하는 데 사용될 수 있으며 에지 디바이스를 사양에 맞게 지정할 수 있습니다 [Koopman 2011].
++ 포그 테스팅 (Fog Testing) : 보통 IoT 시스템의 중점 레이어에 관한 테스트로서, 일반적으로 게이트웨이로 구성됩니다. 소프트웨어 테스팅
+접근 방식은이 계층에 속한 장치가 일반적으로 충분한 양의 컴퓨팅 성능 및 메모리를 가지며 전체 운영 체제 (예 : Linux)를 실행하기 때문에 원활하게 적용될 수 있습니다. 또한 이것은 장치와 인터넷을 연결하는 연결성 실현 레이어이기 때문에 네트워크 테스트 [Kirichek and Koucheryavy 2016] 및 보안 테스트 [Zhang et al. 2014].
++ 클라우드 테스트 : 클라우드 테스트는 클라우드 인프라의 고유 한 품질 문제를 테스트 할 필요성을 제기합니다.
+대규모의 확장 성 및 동적 구성 등이 있습니다. 이 분야는 공개적인 도전과 그 자체의 쟁점을 가지고 있으며, 문헌 [Bai et al. 2011; Riungu et al. 2010].
+
+IoT 시스템을 전체적으로 테스트 할 수 있기 위해, IoT 테스트 베드에 대한 연구가 진행되어 IoT 시스템을 상위 레벨까지 테스트합니다. 거의 모든 테스트 베드가 모든 계층을 수직적으로 포함하고 있지만 단일 도메인으로 응용 또는 기술 측면의 특정 영역에 중점을 둡니다. 서로 다른 기술을 공통 실험 시설에 결합하는 다중 도메인 테스트 베드가 있지만. 현재 활발하고 공개적으로 이용 가능한 물리적 인 테스트 베드에 대한 설문은 Gluhak et al. [Gluhak et al. 2011].
+물리적 인 테스트 베드와 함께 IoT 기반 시스템을 테스트하는 또 다른 방법은 에뮬레이터와 시뮬레이터를 사용하는 것입니다. 한편으로, 에뮬레이터는 타겟 시스템과 정확하게 동일한 시스템 (예 : 물리적 장치 에뮬레이션)입니다. 다른 한편, 시뮬레이터는 타겟 시스템의 긴밀한 복제를 가능하게하지만 완전히 다른 방식으로 구현됩니다 (예 : 스마트 도시 시뮬레이션). Looga 등이 추구 한 연구 은 기존 시뮬레이터와 에뮬레이터를 조사하여 IoT 기반 시스템을 테스트하고 IoT (MAMMotH)를위한 새로운 에뮬레이션 플랫폼을 제안하는 데 대한 적합성에 대한 문제를 제시합니다 [Looga et al. 2012].
+
+6.2 Internet-of-Things 테스팅 솔루션
+현재 IoT 기반 시스템을 테스트하는 데 사용할 수있는 솔루션이 이미 있습니다. 이 솔루션은 다양한 IoT 레이어와 기술을 지원합니다. 도구는 학자 데이터베이스 (Scopus) 및 Google 검색 엔진에 대한 큐레이팅 된 검색 후에 선택되었으며 다음 단락에서 간략하게 설명됩니다. 검색에 사용 된 키워드는 INTERNET-OF-THINGS, TEST, TESTING 및 IoT 중 하나 또는 조합입니다.
+
+PlatformIO http://platformio.org/
+PlatformIO는 크로스 플랫폼 코드 빌더 및 라이브러리 관리자로서 약 200 개의 개발 보드와 대부분의 주요 임베디드 소프트웨어 개발 플랫폼을 지원합니다. ThrowTheSwitch.org [Mike Karlesky 2018]의 Unity Test API를 기반으로하는 단위 테스트 기능 (PIO Unit Testing)이 있습니다.
+IoTIFY https://iotify.io/
+IoTIFY는 하드웨어 종속성없이 IoT를위한 애플리케이션 개발 환경입니다. 장치 가상화에 의지하여 임베디드 프로토 타입 제작 및 시스템 확장 및 데이터 생성을위한 네트워크 시뮬레이션을위한 가상 랩을 제공합니다.
+FIT IoT-LAB https://www.iot-lab.info/ [Adjih et al. 2015]
+IoT-LAB은 소규모 무선 센서 장치 및 2000 개가 넘는 센서 노드가있는 프랑스의 6 개 사이트에 대규모 인프라를 기반으로 구축 된 이질적인 통신 개체를 테스트하기위한 과학적 테스트 베드입니다. SENSLAB 테스트 베드의 후속 제품이며 FIT (Future of the Things) 플랫폼의 일부입니다.
+ArduinoUnit https://github.com/mmurdoch/arduinounit
+ArduinoUnit은 Arduino 라이브러리의 단위 테스트 프레임 워크입니다. 가벼운 라이브러리이기 때문에 개발자는 리소스가 적지 만 Arduino 보드에서 시스템을 쉽게 테스트 할 수 있습니다. 그러나 테스트 보드에 테스트 어플리케이션을 업로드하는 것은 개발자의 몫이며 일반적으로 직렬 포트 모니터를 사용하여 결과를 해석해야합니다.
+MAMMotH [Looga et al. 2012 년]
+MAMMotH는 대규모 IoT 에뮬레이터로서, VM (Virtual Machine) 당 1 만 개의 장치를 에뮬레이션 할 수 있습니다. 아키텍처는 세 가지 시나리오, 즉 GPRS를 통해 스타 토폴로지를 형성하는 기지국에 연결되는 모바일 장치, 독립 실행 형 GPRS 및 제한된 장치 (예 : 센서)를 통해 기지국에 연결된 무선 센서 네트워크 (WSN)는 대용량 IoT 에뮬레이터 인 백엔드에 연결되는 프록시에 연결됩니다. 실제 IoT 환경에 존재하는 통신 문제를 재현하기 위해 장치가 연결된 프록시는 각 노드에 대한 무선 링크를 시뮬 레이팅하여 메시지를 지연 및 삭제할 수 있습니다. 개발자는이 설정을 사용하여 실험 시나리오를 만들고이를 테스트 베드에 배포하고 결과를 모니터링 할 수 있습니다.
+SimIoT [Sotiriadis et al. 2014]
+SimIoT는 IoT 시나리오에서 동적 및 실시간 다중 사용자 제출에 대한 실험을 수행하는 툴킷입니다. 이 툴킷은 모델러가 데이터 센터 호스트 및 소프트웨어 정책 측면에서 다양한 클라우드를 구성 할 수있는 시스템 인 SimIC를 기반으로합니다. SimIC는 원하는 사용자 수가 계산 능력, 소프트웨어 리소스 및 VM 지속 시간에 대한 단일 또는 다중 요청을 보낼 수있는 시스템입니다 가상화.
+Cooja Simulator https://anrg.usc.edu/contiki/ [Bagula and Erasmus 2015]
+Cooja 시뮬레이터는 Contiki OS 용으로 개발 된 에뮬레이션 / 시뮬레이션 플랫폼입니다. 네트워크, 운영 체제 및 명령어 세트를 시뮬레이트 할 수있는 확장 가능한 Java 기반 시뮬레이터입니다. 또한 시뮬레이트하는 대신 실제 노드에 업로드 할 수있는 똑같은 펌웨어 실행을 에뮬레이트 할 수 있습니다. Cooja를 사용하면 개발자는 대상 하드웨어에서 코드와 시스템을 실행하기 오래 전에 테스트 할 수 있습니다.
+TOSSIM http://tinyos.stanford.edu/ [Levis and Lee 2003]
+TOSSIM은 TinyOS 장치를 시뮬레이트하는 특정 목표로 구축 된 무선 센서 네트워크 시뮬레이터입니다. TinyOS는 이벤트 기반이기 때문에 별도의 이벤트가있는 시뮬레이터 엔진으로 쉽게 변환되므로이를 단순화하고보다 효과적으로 만듭니다. TOSSIM은 두 가지 프로그래밍 인터페이스 (Python, C ++)를 지원하며 하드웨어 인터럽트부터 패킷 도착과 같은 상위 레벨 시스템 이벤트에 이르기까지 다양한 수준의 시뮬레이션을 제공합니다.
+iFogSim http://www.cloudbus.org/cloudsim/
+iFogSim은 에지 장치, 클라우드 데이터 센터 및 네트워크 링크를 시뮬레이션하고 이들에 대한 메트릭 평가를 수행 할 수있는 안개 계산 시뮬레이터입니다. 이러한 기능을 통해 QoS (서비스 품질) 기준 (예 : 대기 시간, 네트워크 정체)에 따라 리소스 관리 기술을 조사하고 비교할 수 있습니다.
+MobIoTSim https://github.com/sed-szeged/MobIoTSim [Pflanzner et al. 2016]
+MobIoTSim은 안드로이드에서 개발 된 모바일 IoT 장치 시뮬레이터로, 실제 센서를 구입하지 않고도 IoT 장치 처리를 배우고 여러 장치를 사용하여 IoT 응용 프로그램을 테스트하고 시연하도록 설계되었습니다. 이 시스템은 IBM Bluemix Platform 및 Azure IoT Hub와 같은 클라우드의 게이트웨이 서비스에 연결하여 시뮬레이션 된 장치를 관리하고 중요한 센서 값에 응답하여 알림을 다시 보낼 수 있습니다. 이 도구를 사용하여 개발자는 소형 IoT 시스템의 동작을 검사하고 휴대용 장치로 IoT 클라우드 응용 프로그램을 평가할 수 있습니다.
+IOTSim [Zeng et al. 2017]
+IOTSim은 CloudSim 시스템 위에 구축 된 Cloud 시뮬레이터로 MapReduce 방식을 기반으로 IoT 대형 데이터 처리 테스트를 지원하도록 설계되었습니다. 본질적으로 대형 데이터 시스템을 지원함으로써 연구원 및 상업 조직에 의한 IoT 기반 응용 프로그램의 영향 및 성능에 대한 이해와 분석을 용이하게합니다.
+DPWSim [Han et al. 2014]
+DPWSim은 서비스 지향 및 이벤트 구동 IoT 애플리케이션의 프로토 타이핑 및 개발을 지원하는 시뮬레이션 툴킷입니다. 웹 서비스를위한 OASIS 표준 장치 프로파일 (DPWS)을 지원하는 것을 목표로합니다. 스마트 및 리소스가 제한된 장치에서 웹 서비스를 사용할 수는 있지만 참조 된 장치 프로파일을 구현하는 IoT 장치로 이러한 시스템의 범위를 줄입니다. .
+SimpleIoTSimulator https://www.smplsft.com/SimpleIoTSimulator.html
+SimpleIoTSimulator는 단일 컴퓨터에서 수천 개의 센서로 구성된 테스트 환경을 생성 할 수있는 IoT 장치 시뮬레이터입니다. 그것은 많은 일반적인 IoT 프로토콜을 지원하며 실제 서버 및 센서로부터 기록 된 패킷 교환의 데이터로부터 학습하고 이러한 데이터로부터 시뮬레이션 된 장치의 동작을 모델링 할 수 있습니다.
+Atomiton IoT 시뮬레이터 http://www.atomiton.com/
+Atomiton Stack (Internet-of-Things의 독점적 운영 환경) 위에 구축 된 Atomiton IoT 시뮬레이터는 가상 센서, 액추에이터 및 장치를 고유 한 동작으로 시뮬레이션 할 수있는 프로토 타이핑 및 테스트 프레임 워크입니다. IoT 솔루션의 프로토 타이핑을 허용하고 경계 테스트 케이스를 생성 할 수있는 기능을 제공하여 네트워크 중단, 장치 응답 지연 및 피크로드와 같은 수천 개의 장치 및 이벤트의 시뮬레이션에 의존하여 확장 성을 테스트합니다.
+MBTAAS [Ahmad et al. 2016]
+모델 기반 테스팅 서비스 (MBTAAS)는 IoT 및 데이터 플랫폼을 체계적으로 테스트 할 수있게합니다. 이 접근법은 모델 기반 테스트 (MBT) 기술과 서비스 지향 솔루션을 결합한 것입니다. 이 솔루션은 FIWARE IoT 가능 플랫폼 위에 테스트되었습니다. 또한 솔루션의 모듈성을 통해 다양한 IoT 플랫폼 간의 통합 테스트가 가능합니다.
+CupCarbon http://www.cupcarbon.com/ [Bounceur 2016]
+CupCarbon은 스마트 도시 및 IoT 무선 센서 네트워크 (SCI-WSN)를 설계하기위한 플랫폼입니다. 그것은 하나의 모델의 모바일 유닛 (예 : 자동차)과 자연스러운 이벤트 (예 : 산불, 가스)와 같은 두 가지 시뮬레이션 환경을 중심으로 설계되었으며 다른 하나는 무선 센서 네트워크의 개별 이벤트 시뮬레이션을 작성하고 설계된 시나리오를 고려할 수 있습니다. 이전 환경. OpenStreeMaps 프레임 워크를 통합하고 각 노드를 개별적으로 프로그래밍 할 수있는 CupCarbon은 모니터링 및 환경 데이터 수집을위한 분산 알고리즘을 설계, 시각화, 디버깅 및 검증하는 데 유용한 도구입니다.
+
+표 5. IoT 테스트 환경에서 사용 가능한 툴의 개요 비교. N / A는 조사 중에 이용 가능한 정보가 없거나 발견되지 않았 음을 나타냅니다.
+
+IoT 솔루션을 테스트하기 위해 사용 가능한 도구의 개요 비교는 표 5에 나와 있습니다. 각 솔루션의 테스트 기능은 다양한 변수를 관찰하여 분석됩니다.
+첫 번째로 도구는 그림 5에 제시된대로 IoT 레이어로 구분됩니다. 여기서는 레이어와 관련된 테스트 변수와의 관계를 볼 수 있습니다. PLATFORMIO 및 ARDUINOUNIT와 같은 에지 레이어 도구는 일반적으로 에지 장치 (예 : Arduino)에서 실행되는 코드를 테스트하는 데 중점을 둡니다. 그러나 가장자리 레이어를 테스트하려면 임베디드 시스템 테스트에서 이미 사용 가능한 도구가 유용 할 수 있습니다 (예 : UNITY39). 포그 및 클라우드 도구는 일반적으로 네트워크 또는 응용 프로그램 테스트에 관심이 있지만 코드에 대한 하위 수준 테스트는 무시하고 시스템 및 통합 수준에서 테스트합니다.
+각 도구에 대한 테스트 수준 분석을 통해 단위 테스트에서 수락 테스트까지 적어도 부분적으로 모든 수준을 다루는 도구가 있음을 알게되었습니다. 일부 도구는 모든 수준을 테스트 할 수 있지만 일부 기능은 기본 기능을 제공하지 않습니다. 그 중 하나의 예로 FIT IoT-LAB 테스트 베드가 있습니다.이 테스트 베드는 서로 다른 레이어에서 응용 프로그램을 테스트 할 수있는 대규모 플랫폼을 제공하지만 테스트에서 데이터를 검색하고 관리하는 등의 개발 노력이 필요합니다. 다른 경우, 도구는 모든 네트워크 로그 및 응답을 수집하는 기능을 제공하지만 해당 정보에 대한 직접적인 통찰력을 제공하지 않는 등의 테스트 기능을 부분적으로 만 지원합니다.
+다른 언어와 플랫폼의 솔루션 지원에는 약간의 차이가 있습니다. 사용 가능한 도구의 광대 한 부분은 특정 플랫폼, 언어 또는 표준에 초점을두고 IoT 필드의 이질성에 대한 지원이 부족합니다. 이러한 도구의 예로 DPWS (Web Services Services) 장치 언어에 초점을 둔 DPWSIM과 TinyOS 호환 장치 용 TOSSIM 시뮬레이터가 있습니다. 또 다른 문제점은 표준화없이 시장에 출현하고있는 광범위한 네트워크 통신 프로토콜 및 IoT 가능 기술 (예 : 참조 아키텍처)에서 나타나며 플랫폼에 독립적 인 방법으로 테스트 할 수있는 도구가 부족합니다 . 그러나 일부는 지원되는 플랫폼이 많거나 추가 개발 노력이 필요하므로 구현에 개방되어 있습니다.
+IoT 환경에서 테스트해야하는 여러 가지 아티팩트로 이동하면서 테스트 필수 사항은 고도로 분산 된 시스템 분야에 공통적입니다. 첫째, 인공물이 가능한 솔루션 (예 : MAMMoTH, IFOGSIM), 네트워크 및 통신 변수에 더 많이 적용됩니다. 두 번째로 MOBIOTSIM과 같은 사용 가능한 도구를 사용하여 실제 시나리오 내에서 기능, 유용성 및 일관성을 테스트 할 수있는 응용 프로그램 수준 테스트를 수행하고 비즈니스 논리를 무시합니다. 일부 솔루션은 PLATFORMIO와 같은 에지 장치의 코드 테스팅에도 사용할 수 있습니다. 그러나 보안 및 개인 정보 보호, 규정 테스트 및 펌웨어 / 소프트웨어 업그레이드 (예 : 즉시 사용 가능한 연속 통합 기능)와 같은 특정 아티팩트를 테스트하기위한 도구가 부족하다는 사실을 쉽게 알 수 있습니다.
+보안 및 개인 정보 보호 범위에서 OWASP (Open Web Application Security Project)는 "제조업체, 개발자 및 소비자가 Internet-of-Things와 관련된 보안 문제를 더 잘 이해하고 IoT 기술을 구축, 배포 또는 평가할 때 더 나은 보안 결정을 내릴 수있는 모든 컨텍스트 "[프로젝트 2017].
+테스트 환경은 사용 가능한 테스트 솔루션 내에서 또 다른 특징을 가지고 있습니다. 대부분의 환경은 에뮬레이션 (예 : Arduino 보드의 가상 표현) 또는 시뮬레이션 기술 (예 : 스마트 도시 또는 스마트 하우스의 시뮬레이션)을 통해 순수하게 가상입니다. 그러나 FIT IoT-LAB과 같은 물리적 인 테스트 베드를 만들 때 몇 가지 노력이있었습니다. 또한, 대부분의 경우 물리적 인 장치를 사용하여 테스트를 수행하는 전통적인 소프트웨어 테스팅 도구 (단위 테스트 용)가 있습니다.
+또 다른 관련 측면은 발견 된 솔루션의 개발 단계와 개방성입니다. 대부분의 해결책이 문헌에 제시되었지만 대부분이 순수 학문적이며 소스 코드 나 소프트웨어 패키지에 대한 액세스 권한이 없습니다. 상대적으로 사용 가능한 솔루션은 부족하며 대부분 폐쇄 형 소스이므로 확장 기능이나 플러그인을 통해 도구 기능을 확장하거나 기능을 향상시킬 가능성이 줄어 듭니다. 또한 일부 도구는 원격 테스트 주자에게만 제공되므로 특정 솔루션의 특정 요구 사항을 테스트하고 개인 정보 보호 문제를 제기 할 수있는 능력을 저하시킬 수 있습니다.
+6.3 결론
+이전 섹션에서 설명한 것처럼 테스트 기술과 방법론은 소프트웨어 및 하드웨어 연구 영역 전반에서 독립적으로 개발되었지만 영향은 적지 만 함께 연구되었습니다. 출현의
+39 UNITY by ThrowTheSwitch.org : https://www.throwtheswitch.org/unity
+IoT는 광범위한 응용 시나리오를 갖춘 매우 시장 가치가 높은 영역으로서, 소프트웨어와 하드웨어 모두를 기반으로 한 대규모 솔루션을 테스트 할 때 필요성과 노력을 강화했습니다.
+그러나 IoT의 도메인 간 특성으로 인해 다른 연구 분야에서 오랫동안 추구되어 왔던 연구 과제가 현재 IoT 분야에서 문제가되고 있습니다. 더 큰 의미를 지닌 영역으로 다음 영역을 열거 할 수 있습니다.
+(1) 이기종 시스템 : 이기종 시스템의 문제점을 테스트하는 것은 통합 및 시스템 수준 테스트의 관점에서 나타납니다. 수동 탐색 적 테스트, 조합 테스트 및 검색 기반 소프트웨어 테스팅과 같은 몇 가지 기술이 있지만 여전히 상당한 차이가 존재하며 그 중 일부는 업계의 초점과 연구의 초점 차이가 있습니다 [Ghazi et al. 2015].
+(2) 대규모 분산 시스템 (Large-Scale Distributed Systems) : 대규모의 고도로 분산 된 시스템은 테스트되어야 할 새로운 변수의 출현으로 이어진다. 그 예로 부하 시험 [Jiang and Hassan 2015]과 그러한 시스템의 동적 거동의 취급이있다.
+(3) 클라우드 기반 시스템 : IoT 시스템의 상위 계층은 클라우드입니다. 현재 클라우드 컴퓨팅이 유비쿼터스 화되고 있지만 클라우드 기반 / 클라우드 연결 시스템을 테스트하는 방법에는 여전히 차이가 있습니다. 이러한 예로는 탄력적 인 클라우드 기반 솔루션의 설계 및 테스트가 있습니다 [Calheiros et al. 2011].
+(4) 임베디드 소프트웨어 시스템 : 장치는 일반적으로 메모리 및 처리 능력에 제약이있어 실행중인 소프트웨어를 테스트하기가 어렵습니다. 또한, 이러한 종류의 장치는 전형적으로 실시간 요구와 관련되며, 테스트 응답을 환경 변화에보다 휘발성이되게하는 하드웨어 문제 (예를 들어, 전력 서지)로 인해 실패하기 쉽다 [Banerjee et al. 2016].
+
+ 더군다나, 특히 자동화 된 방식으로 분산 및 이기종 시스템을 테스트 할 수있는 도구에 차이가 있다고 생각할 수 있습니다. 그러나 이러한 부족을 해결하기위한 지속적인 연구가 있습니다 [Lima 2016].
+ IoT 기반 솔루션에 힘을 실어주는 기술들 사이에 퍼져있는 이러한 문헌들과 함께 열린 오픈 소스 기술과의 결합으로 소프트웨어 및 하드웨어 테스트에 대한 이미 널리 알려진 지식으로 IoT 솔루션을 테스트하기위한 적절한 솔루션이나 방법론이 부족합니다. 테스트 목적으로 사용 가능한 솔루션을 집계하고 비교 한 결과, 모든 계층에서 IoT 시스템을 테스트하는 솔루션은 소수에 불과하며 이러한 솔루션은 항상 일부 종류의 제한이 있습니다 (예 : 제한된 수의 테스트 변수 또는 지원되는 플랫폼 ).
+ 따라서 장치, 통신 프로토콜, 표준 및 참조 아키텍처에서 기존 및 지속적으로 증가하는 이질성을 무시하지 않으면 서 IoT 및 그 계층에 대한 테스트를 수행하는 데 사용할 수있는 도구를 다양하게 확장해야합니다. 그럼에도 불구하고, 다른 시험 초점을 가진 도구가 개발되어야한다.
+ 또한 테스트 솔루션은 IoT 솔루션을위한 테스트 및 배포 파이프 라인을 구현할 수 있도록 테스트 자동화 요구 사항과 지속적인 통합 기능을 고려하여 설계해야합니다.
+ IoT 테스트 요구 사항을 기존 시스템과 차별화하는 주요 기능은 이기종 및 대규모 개체 및 네트워크입니다. 이러한 요소는 IoT 기반 솔루션을 테스트하는 복잡성과 어려움을 증가시킵니다. 이와 같이이 기사는 소프트웨어 개발 커뮤니티에서 널리 보급 된 실제 최신 기술과 방법론 및 이러한 기술과 방법론을 IoT 개발 범위로 가져 오는 필요성을 다룹니다. 그런 다음 현재 사용 가능한 테스팅 솔루션의 틈새는 그러한 시스템을 테스트하기위한 상용 및 오픈 소스 도구의 검사를 통해 집계됩니다. 여기에는 IoT 시스템에 직접 영향을 미치는 일련의 오래된 문제점이 있으며 테스트 솔루션, 테스트 자동화 절차 및 지속적인 통합 기능 개발에 대한 추가 작업을 수행해야한다고 생각합니다.
+
+7 결론
+Internet-of-Things의 출현과 함께 비전 인터넷은 World Wide Web (WWW)을 넘어 센서에서 액추에이터에 이르기까지 다양한 일일 개체 및 인프라에 연결된 연결 대상으로 바뀌 었습니다. 신흥 네트워크 기술과 저전력 및 저전력 디바이스로 인한 현실감 전환은 연구 및 비즈니스 관점에서부터 산업, 도시 관리 및 건강과 같은 분야에서 광범위한 기회를 열었습니다.
+IoT는 이미 우리 일상 생활에 눈에 띄는 영향을 미쳤지 만 개념 체계에서 유지 보수에 이르는 몇 가지 과제가 여전히 열려 있습니다. 클라우드 우선 디자인의 시대에 IoT 현실은 안개 및 안개 / 가장자리 계산의 탄생으로 볼 수있는 새로운 건축 방식에 대한 관심을 증가 시켰습니다.
+소프트웨어 엔지니어링 지식 체계 측면에서 볼 때 Visual Programming 및 Model-driven (Software) Engineering과 같은 접근법은 IoT의 경우처럼 소프트웨어 시스템의 복잡성을 해결하는 데 오랫동안 사용되어 왔습니다. 보다 최근에는 라이브 프로그래밍 및 소프트웨어 시스템 개발의 활력을 높이고 개발자의 전반적인 경험을 향상시키는 방법 (예 : 버그 감지 및 수정의 복잡성 감소)에 대한 작업이 진행되었습니다.
+
+REFERENCES
+2016. A Primer on Continuous Delivery. https://feeney.mba/2016/02/25/a-primer-on-continuous-delivery [Online; accessed 1. Jun.
+2018].
+2017. Global Internet Report 2017: Paths to Our Digital Future. Technical Report. Internet Society. 148 pages. 2018. Internet of Everything (IoE). https://newsroom.cisco.com/ioe [Online; accessed 14. May 2018].
+2018. OWASP Internet of Things Project. https://www.owasp.org/index.php/OWASP_Internet_of_Things_Project#IoT_Attack_ Surface_Areas_Project [Online; accessed 22. May 2018].
+Cedric Adjih, Emmanuel Baccelli, Eric Fleury, Gaetan Harter, Nathalie Mitton, Thomas Noel, Roger Pissard-Gibollet, Frederic Saint-Marcel, Guillaume Schreiner, Julien Vandaele, et al. 2015. FIT IoT-LAB: A large scale open experimental IoT testbed. In IEEE 2nd World Forum on Internet of Things. IEEE, 459–464.
+Abbas Ahmad, Fabrice Bouquet, Elizabeta Fourneret, Franck Le Gall, and Bruno Legeard. 2016. Model-Based Testing as a Service for IoT Platforms. Springer International Publishing, Cham, 727–742. https://doi.org/10.1007/978-3-319-47169-3_55
+C Alexander, S Ishikawa, and M Silverstein. 1977. A Pattern Language. https://doi.org/10.2307/1574526
+B Bagula and ZENVILLE Erasmus. 2015. Iot emulation with cooja. In ICTP-IoT Workshop.
+Xiaoying Bai, Muyang Li, Bin Chen, Wei-Tek Tsai, and Jerry Gao. 2011. Cloud testing tools. In Service Oriented System Engineering (SOSE), 2011 IEEE 6th International Symposium on. IEEE, 1–12.
+Abhijeet Banerjee, Sudipta Chattopadhyay, and Abhik Roychoudhury. 2016. Testing Embedded Software. Advances in Computers, Vol. 101. Elsevier, 121 – 153. https://doi.org/10.1016/bs.adcom.2015.11.005
+Barbara Rita Barricelli and Stefano Valtolina. 2015. Designing for End-User Development in the Internet of Things. Springer International Publishing, Cham, 9–24. https://doi.org/10.1007/978-3-319-18425-8_2
+Boris Beizer. 2003. Software testing techniques. Dreamtech Press.
+David  Bericat.  2018.	Internet  of  Things  (IoT)  overview  powered  by  Red  Hat.	https://www.slideshare.net/DavidBericat/ ss45534bericatlacimaaccentureintro [Online; accessed 22. May 2018].
+Michael Blackstock and Rodger Lea. 2012a. IoT mashups with the WoTKit. Proceedings of 2012 International Conference on the Internet of Things, IOT 2012
+(2012), 159–166. https://doi.org/10.1109/IOT.2012.6402318
+Michael Blackstock and Rodger Lea. 2012b. IoT mashups with the WoTKit. In Internet of Things (IOT), 2012 3rd International Conference on the. IEEE, 159–166.
+Michael Blackstock and Rodger Lea. 2014. Toward a Distributed Data Flow Platform for the Web of Things (Distributed Node-RED). In Proceedings of the 5th International Workshop on Web of Things - WoT ’14. 34–39. https://doi.org/10.1145/2684432.2684439
+Marat Boshernitsan and Michael Downes. 2004. Visual Programming Languages: A Survey. Computer Science Division (EECS) December (2004).
+http://digitalassets.lib.berkeley.edu/techreports/ucb/text/CSD-04-1368.pdf
+Ahcène Bounceur. 2016. CupCarbon: A New Platform for Designing and Simulating Smart-City and IoT Wireless Sensor Networks (SCI-WSN). Proceedings of the International Conference on Internet of Things and Cloud Computing (2016), 1:1—-1:1. https://doi.org/10.1145/2896387.2900336
+M.M. Burnett and M.J. Baker. 1994. A classification system for visual programming languages. Journal of Visual Languages and Computing 5, 3 (1994), 287–300. https://doi.org/10.1006/jvlc.1994.1015 cited By 22.
+F Bushmann, R Meunier, and H Rohnert. 1996. Pattern-oriented software architecture: A system of patterns. John Wiley&Sons 1 (1996), 476. https:
+//doi.org/10.1192/bjp.108.452.101
+Rajkumar Buyya and Amir Vahid Dastjerdi. 2016. Internet of Things: Principles and Paradigms. Elsevier. https://doi.org/10.1016/C2015-0-04135-1
+Rodrigo N Calheiros, Rajiv Ranjan, Anton Beloglazov, César AF De Rose, and Rajkumar Buyya. 2011. CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms. Software: Practice and experience 41, 1 (2011), 23–50.
+Yinong Chen and Gennaro De Luca. 2016. VIPLE: visual IoT/robotics programming language environment for computer science education. In Parallel and
+Distributed Processing Symposium Workshops, 2016 IEEE International. IEEE, 963–971.
+Philip T. Cox. 2007. Visual Programming Languages. John Wiley & Sons, Inc. https://doi.org/10.1002/9780470050118.ecse450
+João Pedro Dias, Flavio Couto, Ana C. R. Paiva, and Hugo Sereno Ferreira. 2018. A Brief Overview of Existing Tools for Testing the Internet-of-Things. In Proceedings of the 2018 IEEE International Conference on Software Testing, Verification and Validation Workshops (First International Workshop on Verification and Validation of Internet of Things). IEEE - Institute of Electrical and Electronics Engineers.
+ 
+
+João Pedro Dias, José Pedro Pinto, and José Magalhães Cruz. 2017.   A Hands-on Approach on Botnets for Behavior Exploration. In Proceedings          of the 2nd International Conference on Internet of Things, Big Data and Security. SCITEPRESS - Science and Technology Publications, 463–469.
+https://doi.org/10.5220/0006392404630469
+Stephan Diehl. 2007. Software Visualization: Visualizing the Structure, Behaviour, and Evolution of Software. Springer. http://gen.lib.rus.ec/book/ index.php?md5=D6C642DE2B9229610116A0B600F02A60
+A. Dohr, R. Modre-Opsrian, M. Drobics, D. Hayn, and G. Schreier. 2010. The Internet of Things for Ambient Assisted Living. Seventh International Conference on Information Technology: New Generations (2010), 804–809. https://doi.org/10.1109/ITNG.2010.104
+Stephen H Edwards. 2001. A framework for practical, automated black-box testing of component-based software. Software Testing, Verification and Reliability 11, 2 (2001), 97–111.
+Hugo Sereno Ferreira. 2011. Adaptive Object-Modeling Patterns, Tools and Applications. Ph.D. Dissertation.
+F. Fleurey and B. Morin. 2017. ThingML: A Generative Approach to Engineer Heterogeneous and Distributed Systems. (April 2017), 185–188. https:
+//doi.org/10.1109/ICSAW.2017.63
+B. Francis. 2017. Web Thing API. Technical Report. Mozilla.
+Mattern Friedemann and Christian Floerkemeir. 2011. From the Internet to the Internet of Things. From Active Data Management to Event-Based Systems and More (2011), 242–259. https://doi.org/10.1007/978-3-642-17226-7 arXiv:9780201398298
+Ahmad Nauman Ghazi, Kai Petersen, and Jürgen Börstler. 2015. Heterogeneous Systems Testing Techniques: An Exploratory Survey. Springer International Publishing, Cham, 67–85. https://doi.org/10.1007/978-3-319-13251-8_5
+Alexander Gluhak, Srdjan Krco, Michele Nati, Dennis Pfisterer, Nathalie Mitton, and Tahiry Razafindralambo. 2011. A survey on facilities for experimental internet of things research. IEEE Communications Magazine 49, 11 (2011).
+Jayavardhana Gubbi, Rajkumar Buyya, Slaven Marusic, and Marimuthu Palaniswami. 2013. Internet of Things (IoT): A vision, architectural elements, and future directions. Future Generation Computer Systems 29, 7 (2013), 1645–1660. https://doi.org/10.1016/j.future.2013.01.010 arXiv:1207.0203
+Son N. Han, Gyu Myoung Lee, Noel Crespi, Kyongwoo Heo, Nguyen Van Luong, Mihaela Brut, and Patrick Gatellier. 2014. DPWSim: A simulation toolkit for IoT applications using devices profile for web services. 2014 IEEE World Forum on Internet of Things, WF-IoT 2014 (2014), 544–547.
+https://doi.org/10.1109/WF-IoT.2014.6803226
+David Hanes, Gonzalo Salgueiro, Patrick Grossetete, Rob Barton, and Jerome Henry. [n. d.]. IoT Fundamentals: Networking Technologies, Protocols, and Use Cases for the Internet of Things.
+Robert Hanmer. 2013. Patterns for fault tolerant software. John Wiley & Sons.
+Runze Hao, Brice Morin, and Arne-Jørgen Berre. 2012. A semi-automatic behavioral mediation approach based on models@runtime. Mrt@Runtime
+(2012), 67–71. https://doi.org/10.1145/2422518.2422529
+Nicolas Harrand, Franck Fleurey, Brice Morin, and Knut Eilif Husa. 2016. ThingML: A Language and Code Generation Framework for Heterogeneous Targets. (2016), 125–135. https://doi.org/10.1145/2976767.2976812
+Ben Herzberg, Dima Bekerman, and Igal Zeifman. 2016. Breaking Down Mirai: An IoT DDoS Botnet Analysis. Incapsula Blog (Oct 2016). https:
+//www.incapsula.com/blog/malware-analysis-mirai-ddos-botnet.html
+Md. Mahmud Hossain, Maziar Fotouhi, and Ragib Hasan. 2015. Towards an Analysis of Security Issues, Challenges, and Open Problems in the Internet of Things. 2015 IEEE World Congress on Services (2015), 21–28. https://doi.org/10.1109/SERVICES.2015.12
+G F Hurlburt, J Voas, and K W Miller. 2012. The Internet of Things: A Reality Check. IT Professional 14, June (2012), 56–59. https://doi.org/10.1109/ MITP.2012.60
+IEEE. 1990. IEEE Standard Glossary of Software Engineering Terminology. IEEE Std 610.12-1990 (Dec 1990), 1–84. https://doi.org/10.1109/ IEEESTD.1990.101064
+Michaela Iorga, Larry Feldman, Robert Barton, Michael J Martin, Nedim S Goren, and Charif Mahmoudi. 2018. Fog Computing Conceptual Model. Technical Report.
+ISO/IEC JTC 1. 2014. Internet of Things (IoT) - Preliminary Report. Technical Report. ISO.
+D. Janes. 2017. IOTDB. Technical Report. IOTDB.org.
+C. Jennings, Z. Shelby, Cisco, Sensinode, Ericsson, and J. Arkko. 2013. Media Types for Sensor Markup Language (SENML). https://tools.ietf.org/ html/draft-jennings-senml-10 [Online; accessed 19. May 2018].
+Z. M. Jiang and A. E. Hassan. 2015. A Survey on Load Testing of Large-Scale Software Systems. IEEE Transactions on Software Engineering 41, 11 (Nov 2015), 1091–1118. https://doi.org/10.1109/TSE.2015.2445340
+Wesley M. Johnston, J. R. Paul Hanna, and Richard J. Millar. 2004. Advances in dataflow programming languages. Comput. Surveys 36, 1 (2004), 1–34.
+https://doi.org/10.1145/1013208.1013209
+Ved P. Kafle, Yusuke Fukushima, and Hiroaki Harai. 2016. Internet of things standardization in ITU and prospective networking technologies. IEEE Communications Magazine 54, 9 (sep 2016), 43–49. https://doi.org/10.1109/MCOM.2016.7565271
+Ashton Kevin. 2009. That ’Internet of Things’ Thing. RFID journal (2009).
+Ruslan Kirichek and Andrey Koucheryavy. 2016. Internet of Things Laboratory Test Bed. Springer India, New Delhi, 485–494. https://doi.org/10. 1007/978-81-322-2580-5_44
+James  Kirkland.  2015. Internet  of  Things:  insights  from  Red  Hat  -  RHD Blog.	https://developers.redhat.com/blog/2015/03/31/
+internet-of-things-insights-from-red-hat [Online; accessed 22. May 2018].
+Philip Koopman. 2011. Embedded Software Testing. (2011). http://www.ece.cmu.edu/~ece649/lectures/08_testing.pdf
+Dmitry G Korzun, Sergey I Balandin, and Andrei V Gurtov. 2013. Deployment of Smart Spaces in Internet of Things: Overview of the Design Challenges. 48–59. https://doi.org/10.1007/978-3-642-40316-3_5
+Yu Beng Leau, Wooi Khong Loo, Wai Yip Tham, and Soo Fun Tan. 2012. Software development life cycle AGILE vs traditional approaches. In International Conference on Information and Network Technology, Vol. 37. 162–167.
+Philip Levis and Nelson Lee. 2003. Tossim: A simulator for tinyos networks. UC Berkeley, September 24 (2003).
+ 
+
+Karen Lewis. 2016. Fantastic news for Open Source and IoT fans. https://www.ibm.com/blogs/internet-of-things/open-source-iot/
+Toby Jia-Jun Li, Amos Azaria, and Brad A Myers. 2017a. SUGILITE: creating multimodal smartphone automation by demonstration. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems. ACM, 6038–6049.
+Toby Jia-Jun Li, Yuanchun Li, Fanglin Chen, and Brad A. Myers. 2017b. Programming IoT Devices by Demonstration Using Mobile Apps. In End-User Development, Simone Barbosa, Panos Markopoulos, Fabio Paternò, Simone Stumpf, and Stefano Valtolina (Eds.). Springer International Publishing, Cham, 3–17.
+Steve Liang, Chih-Yuan Huang, and Tania Khalafbeigi. 2016. OGC SensorThings API. Technical Report. Open Geospatial Consortium.
+Bruno Lima. 2016. Automated Scenario-Based Testing of Distributed and Heterogeneous Systems. Proceedings - 2016 IEEE International Conference on Software Testing, Verification and Validation, ICST 2016 (2016), 383–384. https://doi.org/10.1109/ICST.2016.49
+Wang Linzhang, Yuan Jiesong, Yu Xiaofeng, Hu Jun, Li Xuandong, and Zheng Guo. 2004. Generating test cases from UML activity diagram based on gray-box method. In Software Engineering Conference, 2004. 11th Asia-Pacific. IEEE, 284–291.
+Vilen Looga, Zhonghong Ou, Yang Deng, and Antti Yla-Jaaski. 2012. Mammoth: A massive-scale emulation platform for internet of things. In Cloud
+Computing and Intelligent Systems (CCIS), 2012 IEEE 2nd International Conference on, Vol. 3. IEEE, 1235–1239.
+Gerard Meszaros and Jim Doble. 1997. Pattern Languages of Program Design. (1997), 529–574. http://dl.acm.org/citation.cfm?id=273448. 273487
+Greg Williams Mike Karlesky, Mark VanderVoord. 2018. Unity Test API. https://github.com/ThrowTheSwitch/Unity#unity-test-api
+Brice Morin, Nicolas Harrand, and Franck Fleurey. 2017. Model-Based Software Engineering to Tame the IoT Jungle. IEEE Software 34, 1 (2017), 30–36.
+https://doi.org/10.1109/MS.2017.11
+Thomas Ostrand. 2002. White-Box Testing. Encyclopedia of Software Engineering (2002).
+Dennis G Perry, Steven H Blumenthal, and Robert M Hinden. 1988. The ARPANET and the DARPA Internet. Library Hi Tech 6, 2 (feb 1988), 51–62.
+https://doi.org/10.1108/eb047726
+T. Pflanzner, A. Kertesz, B. Spinnewyn, and S. Latre. 2016. MobIoTSim: Towards a mobile IoT device simulator. Proceedings - 2016 4th International Conference on Future Internet of Things and Cloud Workshops, W-FiCloud 2016 (2016), 21–27. https://doi.org/10.1109/W-FiCloud.2016.21
+Christian Prehofer and Luca Chiarabini. 2013. From IoT Mashups to Model-based IoT. W3C Workshop on the Web of Things (2013).
+Christian Prehofer and Luca Chiarabini. 2015. From Internet of things mashups to model-based development. Proceedings - International Computer Software and Applications Conference 3 (2015), 499–504. https://doi.org/10.1109/COMPSAC.2015.263
+Open Web Application Security Project. 2017. Tester IoT Security Guidance. https://www.owasp.org/index.php/OWASP_Internet_of_ Things_Project
+Antonio Ramadas, Gil Domingues, Joao Pedro Dias, Ademar Aguiar, and Hugo Sereno Ferreira. 2017. Patterns for Things that Fail. In Proceedings of the 24th Conference on Pattern Languages of Programs (PLoP ’17). ACM - Association for Computing Machinery.
+Partha Pratim Ray. 2017. A Survey on Visual Programming Languages in Internet of Things. Scientific Programming 2017 (2017), 1–6. https:
+//doi.org/10.1155/2017/1231430
+Lukas Reinfurt, Uwe Breitenbücher, Michael Falkenthal, Frank Leymann, and Andreas Riegg. 2016. Internet of things patterns. 21st European Conference on Pattern Languages of Programs - EuroPlop ’16 (2016), 1–21.
+Lukas Reinfurt, Uwe Breitenbücher, Michael Falkenthal, Frank Leymann, and Andreas Riegg. 2017. Internet of things patterns for devices. In Ninth international Conferences on Pervasive Patterns and Applications (PATTERNS) 2017. 117–126. https://doi.org/10.1145/3011784.3011789
+Chris Richardson. 2018. Microservices Patterns: With examples in Java. Manning.
+Biljana L. Risteska Stojkoska and Kire V. Trivodaliev. 2017. A review of Internet of Things for smart home: Challenges and solutions. Journal of Cleaner Production 140 (2017), 1454–1464. https://doi.org/10.1016/j.jclepro.2016.10.006
+Leah Muthoni Riungu, Ossi Taipale, and Kari Smolander. 2010. Research issues for software testing in the cloud. In Cloud Computing Technology and Science (CloudCom), 2010 IEEE Second International Conference on. IEEE, 557–564.
+S. K. Chang. 2002. Handbook of Software Engineering and Knowledge Engineering. World Scientific Publishing Co. Peter Scargill. 2015. Node-Red Madness. https://tech.scargill.net/node-red-madness/
+Padraig  Scully.  2018.	The  Top  10  IoT  Segments  in  2018  –  based  on  1,600  real  IoT  projects.	https://iot-analytics.com/ top-10-iot-segments-2018-real-iot-projects/ [Online; accessed 15. May 2018].
+S. Sicari, A. Rizzardi, L. A. Grieco, and A. Coen-Porisini. 2015. Security, privacy and trust in Internet of things: The road ahead. Computer Networks 76 (2015), 146–164. https://doi.org/10.1016/j.comnet.2014.11.008 arXiv:1404.7799
+Stelios Sotiriadis, Nik Bessis, Eleana Asimakopoulou, and Navonil Mustafee. 2014. Towards simulating the internet of things. IEEE 28th International Conference on Advanced Information Networking and Applications Workshops (2014), 444–448. https://doi.org/10.1109/WAINA.2014.74 Tiago Boldt Sousa, Filipe Figueiredo Correia, and Hugo Sereno Ferreira. 2015. Patterns for software orchestration on the cloud. In Proceedings of the 22nd
+Conference on Pattern Languages of Programs. The Hillside Group, 17.
+John A Stankovic. 2014. Research directions for the internet of things. IEEE Internet of Things Journal 1, 1 (2014), 3–9. https://doi.org/10.1109/ JIOT.2014.2312291
+H. Sundmaeker, P. Guillemin, P. Friess, and S. Woelffle. 2010. Vision and Challenges for Realising the Internet of Things. Technical Report. European Commission.
+Dave Thomas and Brian M. Barry. 2003. Model Driven Development: The Case for Domain Oriented Programming. (2003), 2–7. https://doi.org/10. 1145/949344.949346
+V. Trifa, D. Guinard, and D. Carrera. 2017. Web Thing Model. Technical Report. EVRYTHNG.
+Andrew Whitmore, Anurag Agarwal, and Li Da Xu. 2015. The Internet of Things—A survey of topics and trends. Information Systems Frontiers 17, 2 (2015), 261–274.
+M Bani Younis and G Frey. 2003. Formalization of Existing PLC Programs: A Survey. CESA 2003, Lille (France), Paper No. S2-R (2003), –00–0239.
+Xuezhi Zeng, Saurabh Kumar Garg, Peter Strazdins, Prem Prakash Jayaraman, Dimitrios Georgakopoulos, and Rajiv Ranjan. 2017. IOTSim: A simulator for analysing IoT applications. Journal of Systems Architecture 72 (2017), 93–107. https://doi.org/10.1016/j.sysarc.2016.06.008
+ 
+
+Z. K. Zhang, M. C. Y. Cho, C. W. Wang, C. W. Hsu, C. K. Chen, and S. Shieh. 2014. IoT Security: Ongoing Challenges and Research Opportunities. In 2014 IEEE 7th International Conference on Service-Oriented Computing and Applications. 230–234. https://doi.org/10.1109/SOCA.2014.58
