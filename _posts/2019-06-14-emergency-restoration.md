@@ -13,4 +13,6 @@ root 사용자 비밀번호 변경
 9. mount -o remount,rw / 을 입력해 rw모드로 마운트
 10. mount 로 다시 확인
 11. passwd 명령어로 root 비밀번호 변경
-12. 시스템 
+12. 시스템 재시작
+
+
