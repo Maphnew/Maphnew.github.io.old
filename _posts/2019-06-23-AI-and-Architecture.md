@@ -98,6 +98,10 @@ A. 스타일 전송
 ![Generation Pipeline (Models I to III)](./image/Generation Pipeline (Models I to III).png)
 <Generation Pipeline (Models I to III)>
 
+## 1. Footprint
+
+
+
 동시에 파이프 라인을 개별 단계로 나누어 사용자가 각 모델을 조정할 수 있습니다. 모델의 출력을 선택하고 편집하여 다음 모델에 제공하기 전에 사용자는 설계 프로세스를 제어합니다. 그 입력은 모델에 의해 내려진 결정을 형성하여 인간과 기계의 상호 작용을 기대합니다.
 
 
