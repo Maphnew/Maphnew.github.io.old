@@ -83,5 +83,21 @@ A. 스타일 전송
 ![Modern-to-Baroque_Floor_Plan_Translation](./image/Modern-to-Baroque_Floor_Plan_Translation.jpeg)
 <Modern-to-Baroque_Floor_Plan_Translation>
 
+평면도 내에서 "스타일"은 벽의 형상과 그림 평면을 연구하여 관찰 할 수 있습니다. 전형적인 바로크 양식의 교회는 여러 개의 둥근 들여 쓰기가있는 부피가 큰 기둥을 표시합니다. Mies van der Rohe의 현대식 빌라는 얇은 평면 벽을 보여줍니다. 벽면의이 "껍질 벗기기"는 GAN이 인식 할 수있는 기능입니다. 한 쌍의 이미지가 계획의 세그먼트 화 된 버전이고 다른 이미지가 원래 벽의 구조 인 한 쌍의 이미지를 보여줌으로써 건축 스타일과 관련하여 일정한 기계 직감을 구축 할 수 있습니다.
+
+이 섹션에서는 바로크 스타일을 배우기 위해 훈련 된 모델의 결과를 보여줍니다. 그러면 주어진 평면도가 수동으로 분할되어 (A) 새로운 벽면 스타일로 다시 옷을 입은 스타일 이전으로 진행됩니다 (B).
+
+![Style_Transfer_Results--Apartment_Units_Modern-to-Baroque_Style_Transfer](./image/Style_Transfer_Results--Apartment_Units_Modern-to-Baroque_Style_Transfer.jpeg)
+<Style_Transfer_Results--Apartment_Units_Modern-to-Baroque_Style_Transfer>
+
+![Layout_Assistant-_a_Step_by_Step_Pipeline](./image/Layout_Assistant-_a_Step_by_Step_Pipeline.png)
+<Layout_Assistant-_a_Step_by_Step_Pipeline>
+
+이 섹션에서는 다중 단계 파이프 라인을 제공하여 평면도를 그리는 데 필요한 모든 단계를 통합합니다. 스케일을 뛰어 넘어서, 아키텍트가 취한 프로세스를 에뮬레이션하고 각 단계를 하나의 특정 모델로 캡슐화하고 주어진 작업을 수행하도록 교육합니다. 소포에서 건물 풋 프린트 (I)까지, 발자국에서부터 벽 및 창 (II)으로 분할 된 방, 창성한 바닥 계획에서 가구 한 (III)까지 각 단계가 신중하게 설계되고, 훈련되고 테스트되었습니다.
+
+![Generation Pipeline (Models I to III)](./image/Generation Pipeline (Models I to III).png)
+<Generation Pipeline (Models I to III)>
+
+동시에 파이프 라인을 개별 단계로 나누어 사용자가 각 모델을 조정할 수 있습니다. 모델의 출력을 선택하고 편집하여 다음 모델에 제공하기 전에 사용자는 설계 프로세스를 제어합니다. 그 입력은 모델에 의해 내려진 결정을 형성하여 인간과 기계의 상호 작용을 기대합니다.
 
 
