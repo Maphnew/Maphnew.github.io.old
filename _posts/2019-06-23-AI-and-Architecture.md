@@ -95,13 +95,11 @@ A. 스타일 전송
 
 이 섹션에서는 다중 단계 파이프 라인을 제공하여 평면도를 그리는 데 필요한 모든 단계를 통합합니다. 스케일을 뛰어 넘어서, 아키텍트가 취한 프로세스를 에뮬레이션하고 각 단계를 하나의 특정 모델로 캡슐화하고 주어진 작업을 수행하도록 교육합니다. 소포에서 건물 풋 프린트 (I)까지, 발자국에서부터 벽 및 창 (II)으로 분할 된 방, 창성한 바닥 계획에서 가구 한 (III)까지 각 단계가 신중하게 설계되고, 훈련되고 테스트되었습니다.
 
-![Generation Pipeline (Models I to III)](./image/Generation Pipeline (Models I to III).png)
+![Generation Pipeline (Models I to III)](./image/Generation_Pipeline_(Models_I_to_III).png)
 <Generation Pipeline (Models I to III)>
-
-## 1. Footprint
-
 
 
 동시에 파이프 라인을 개별 단계로 나누어 사용자가 각 모델을 조정할 수 있습니다. 모델의 출력을 선택하고 편집하여 다음 모델에 제공하기 전에 사용자는 설계 프로세스를 제어합니다. 그 입력은 모델에 의해 내려진 결정을 형성하여 인간과 기계의 상호 작용을 기대합니다.
 
+## 1. Footprint
 
