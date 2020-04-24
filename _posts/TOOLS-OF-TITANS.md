@@ -1,3 +1,10 @@
+---
+title: "TOOLS OF TITANS"
+date: 2019-04-24 23:10:00
+categories: book
+---
+
+
 # TOOLS OF TITANS(타이탄의 도구들)
 
 - 1장 세상에서 가장 성공한 사람들의 비밀
